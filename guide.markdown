@@ -21,7 +21,7 @@ If your personal information is available, we advise you to take one of the foll
 
 Whois data isn't generally publicaly cached, so once you fix this you should be good to go!
 
-<h3>Advanced Whois Chaos<h3>
+<h3>Advanced Whois Chaos</h3>
 If your information is on your whois but out of date, put some of it through [reverse whois tools](http://www.expertusability.com/reverse-whois-search/). A matching phone number or email address can be used to find other domains registered with that information, and those records might be current.
 
 <h2>Removing location data</h2>
