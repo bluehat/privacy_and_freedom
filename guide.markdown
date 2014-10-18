@@ -39,4 +39,6 @@ EXIF data is a variety of information the device which captures your photo store
 
 <h2>About</h2>
 
-This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to this gist. If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
+This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/) 
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to this gist. If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
