@@ -10,7 +10,7 @@ This one should be easy, but it is the number one privacy failure we found when 
 
 When you register a domain, you fill out contact information which by default is _public_. You can trivially check what information is public in any Linux/OSX terminal
 
-    whois www.example.com
+    whois example.com
 
 If you're not a machine which supports the whois command you can use one of the many [online tools](http://www.whois.net/) to check your the whois records.
 
