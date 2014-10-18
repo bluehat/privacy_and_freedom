@@ -40,6 +40,10 @@ EXIF data is a variety of information the device which captures your photo store
 * If you have an anonymous persona strip all EXIF data from all photos you upload. A device ID can link your public and private personas.
 * Imgur automatically strips all information, so when in doubt, they are safe and awesome!
 
+<h2>Miscelanious</h2>
+* Don't hotlink images directly from Facebook unless you're OK with everybody knowing your facebook profile
+* If you discuss your partner(s) or housemates publically, remember to make sure they follow this guide too
+
 <h2>About</h2>
 
 This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/) 
