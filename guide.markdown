@@ -39,7 +39,7 @@ EXIF data is a variety of information the device which captures your photo store
 * If you'd like to see what EXIF information a  site shows, take the URL of an image uploaded there and put it in [this website](http://exifdata.com/).
 * Flickr permits you to upload information with EXIF data. Consider disabling it when you post from sensitive locations.
 * If you have an anonymous persona strip all EXIF data from all photos you upload. A device ID can link your public and private personas.
-* Imgur automatically strips all information, so when in doubt, they are safe and awesome!
+* Imgur automatically strips all sensitive information, so when in doubt, they are safe and awesome!
 
 <h2>Miscellaneous</h2>
 * Don't hotlink images directly from Facebook unless you're OK with everybody knowing your facebook profile
