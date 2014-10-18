@@ -1,12 +1,12 @@
 <h1>Privacy Guide for Activists with Haters</h1>
-In light of the gamergate fiasco, we realized that most of the targeted individuals had their private information trivially publically online. This guide is meant to help people take basic steps required to protect their online privacy, hopefully reducing the number of crazies who threaten to show up at your house.
+In light of the gamergate fiasco, we realized that most of the targeted individuals had their private information trivially publicly online. This guide is meant to help people take basic steps required to protect their online privacy, hopefully reducing the number of crazies who threaten to show up at your house.
 
 We do not believe that leaving your information online means you deserve harassment, we simply wish to arm people who want to speak up with all the defensive tools available.
 
 This guide is not an anti-government-survelience document, as it only helps you make your information private and does not remove it.
 
 <h2>Hiding Your Whois Data</h2>
-This one should be easy, but it is the number one privacy failure we found when checking information of indviduals who have previously been harassed.
+This one should be easy, but it is the number one privacy failure we found when checking information of individuals who have previously been harassed.
 
 When you register a domain, you fill out contact information which by default is _public_. You can trivially check what information is public in any Linux/OSX terminal
 
@@ -19,7 +19,7 @@ If your personal information is available, we advise you to take one of the foll
 * Purchase a domain by proxy plan and have them handle your domains
 * Migrate to a registrar which provides free domain name privacy (namecheap gives it for free your first year)
 
-Whois data isn't generally publicaly cached, so once you fix this you should be good to go!
+Whois data isn't generally publicly cached, so once you fix this you should be good to go!
 
 <h3>Advanced Whois Chaos</h3>
 If your information is on your whois but out of date, put some of it through [reverse whois tools](http://www.expertusability.com/reverse-whois-search/). A matching phone number or email address can be used to find other domains registered with that information, and those records might be current.
@@ -40,9 +40,9 @@ EXIF data is a variety of information the device which captures your photo store
 * If you have an anonymous persona strip all EXIF data from all photos you upload. A device ID can link your public and private personas.
 * Imgur automatically strips all information, so when in doubt, they are safe and awesome!
 
-<h2>Miscelanious</h2>
+<h2>Miscellaneous</h2>
 * Don't hotlink images directly from Facebook unless you're OK with everybody knowing your facebook profile
-* If you discuss your partner(s) or housemates publically, remember to make sure they follow this guide too
+* If you discuss your partner(s) or housemates publicly, remember to make sure they follow this guide too
 
 <h2>About</h2>
 
