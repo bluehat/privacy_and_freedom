@@ -35,7 +35,8 @@ While most activists are very good about this, no guide would be complete withou
 <h2>Removing EXIF data</h2>
 EXIF data is a variety of information the device which captures your photo stores and uploads with your photo. If this device contains a GPS chip (like almost all cellphones do) the location where the photo was taken can be determined. [The EFF has a longer explanation](https://www.eff.org/deeplinks/2012/04/picture-worth-thousand-words-including-your-location) if you're curious.
 
-* Twitter and Facebook remove photo exif data by default, but twitpic does not. Either disable locations on twitpic or don't use it.
+* Twitter, Facebook and Tumblr remove sensitive photo EXIF data by default, but not all services do. 
+* If you'd like to see what EXIF information a  site shows, take the URL of an image uploaded there and put it in [this website](http://exifdata.com/).
 * Flickr permits you to upload information with EXIF data. Consider disabling it when you post from sensitive locations.
 * If you have an anonymous persona strip all EXIF data from all photos you upload. A device ID can link your public and private personas.
 * Imgur automatically strips all information, so when in doubt, they are safe and awesome!
