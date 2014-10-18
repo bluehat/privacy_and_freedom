@@ -12,7 +12,7 @@ When you register a domain, you fill out contact information which by default is
 
     whois www.example.com
 
-If you're not a machine which supports the whois command you can use one of the many [online tools](http://www.whois.net/) to check your the wholis records.
+If you're not a machine which supports the whois command you can use one of the many [online tools](http://www.whois.net/) to check your the whois records.
 
 If your personal information is available, we advise you to take one of the following actions:
 * Purchase WhoisGuard from your domain from your registrar
