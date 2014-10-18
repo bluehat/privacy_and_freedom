@@ -19,7 +19,7 @@ If your personal information is available, we advise you to take one of the foll
 * Purchase a domain by proxy plan and have them handle your domains
 * Migrate to a registrar which provides free domain name privacy (namecheap gives it for free your first year)
 
-Whois data isn't generally publicly cached, so once you fix this you should be good to go!
+Whois data isn't generally publicly cached, so once you fix this you should be good to go! It sometimes technically can be stored by certain services behind a paywall.
 
 <h3>Advanced Whois Chaos</h3>
 If your information is on your whois but out of date, put some of it through [reverse whois tools](http://www.expertusability.com/reverse-whois-search/). A matching phone number or email address can be used to find other domains registered with that information, and those records might be current.
@@ -45,8 +45,8 @@ EXIF data is a variety of information the device which captures your photo store
 If you recycle the same profile images over and over, you may be surprised what shows up if you [search by your profile image](http://www.google.com/insidesearch/features/images/searchbyimage.html).
 
 <h2>Miscellaneous</h2>
-* Don't hotlink images directly from Facebook unless you're OK with everybody knowing your facebook profile
-* If you discuss your partner(s) or housemates publicly, remember to make sure they follow this guide too
+* Don't hotlink images directly from Facebook unless you're OK with everybody knowing your facebook profile.
+* If you discuss your partner(s) or housemates publicly, remember to make sure they follow this guide too.
 
 <h1>Make your accounts harder to steal!</h1>
 <h2>2 Factor Authentication</h2>
@@ -62,10 +62,12 @@ Check through your old accounts. Do you still own the old @comcast.net where you
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
 
-Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [Lastpass](https://lastpass.com/).
+Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [KeePass](http://keepass.whinfo/) or [LastPass](https://lastpass.com/).
+
+Whenever possible, set up and use ssh keys instead of passwords.
 
 <h1>About</h1>
 
-This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/).
+This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/) and [Cliff Jolly](https://twitter.com/expiredpopsicle).
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to this gist. If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
