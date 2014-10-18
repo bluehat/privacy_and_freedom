@@ -38,7 +38,7 @@ EXIF data is a variety of information the device which captures your photo store
 * Twitter and Facebook remove photo exif data by default, but twitpic does not. Either disable locations on twitpic or don't use it.
 * Flickr permits you to upload information with EXIF data. Consider disabling it when you post from sensitive locations.
 * If you have an anonymous persona strip all EXIF data from all photos you upload. A device ID can link your public and private personas.
-* Imgur automatically strips all information, so when in doubt, they are very safe and awesome!
+* Imgur automatically strips all information, so when in doubt, they are safe and awesome!
 
 <h2>About</h2>
 
