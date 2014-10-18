@@ -15,7 +15,7 @@ When you register a domain, you fill out contact information which by default is
 If you're not a machine which supports the whois command you can use one of the many [online tools](http://www.whois.net/) to check your the wholis records.
 
 If your personal information is available, we advise you to take one of the following actions:
-* Purchase a privacy plan from your domain from your registrar
+* Purchase WhoisGuard from your domain from your registrar
 * Purchase a domain by proxy plan and have them handle your domains
 * Migrate to a registrar which provides free domain name privacy (namecheap gives it for free your first year)
 
