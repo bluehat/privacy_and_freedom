@@ -58,7 +58,7 @@ Check through your old accounts. Do you still own the old @comcast.net where you
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
 
-Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [Lastpass](https://lastpass.com/)
+Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [Lastpass](https://lastpass.com/).
 
 <h1>About</h1>
 
