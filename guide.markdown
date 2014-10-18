@@ -44,7 +44,23 @@ EXIF data is a variety of information the device which captures your photo store
 * Don't hotlink images directly from Facebook unless you're OK with everybody knowing your facebook profile
 * If you discuss your partner(s) or housemates publicly, remember to make sure they follow this guide too
 
-<h2>About</h2>
+<h1>Bonus: Make your accounts harder to steal!</h1>
+<h2>2 Factor Authentication</h2>
+We're sure you've been lectured on password security, and while your habits are probably terrible, we're going to focus today instead on 2-factor auth. 2-factor auth requires somebody to know your password _and_ have your phone or another physical device (or at least control over it). 
+
+You're encouraged to enable 2-factor authentication on everything, but _prioritize accounts where password resets are sent_.
+
+Here is an [amazing website with directions on how to do 2-factor auth on everything ever](https://twofactorauth.org/).
+
+<h2>Update where password resets go<h2>
+Check through your old accounts. Do you still own the old @comcast.net where you registered your twitter handle to 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location.
+
+<h2>Grow up and use proper passwords, unique to each site</h2>
+Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
+
+Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [Lastpass](https://lastpass.com/)
+
+<h1>About</h1>
 
 This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/).
 
