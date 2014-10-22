@@ -45,7 +45,7 @@ EXIF data is a variety of information the device which captures your photo store
 If you recycle the same profile images over and over, you may be surprised what shows up if you [search by your profile image](http://www.google.com/insidesearch/features/images/searchbyimage.html).
 
 <h2>Miscellaneous</h2>
-* Don't hotlink images directly from Facebook unless you're OK with everybody knowing your facebook profile.
+* Don't hotlink images directly from Facebook unless you're OK with everybody knowing your Facebook profile.
 * If you discuss your partner(s) or housemates publicly, remember to make sure they follow this guide too.
 
 <h1>Make your accounts harder to steal!</h1>
