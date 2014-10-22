@@ -3,7 +3,7 @@ In light of the gamergate fiasco, we realized that most of the targeted individu
 
 We do not believe that leaving your information online means you deserve harassment, we simply wish to arm people who want to speak up with all the defensive tools available.
 
-This guide is not an anti-government-survelience document, as it only helps you make your information private and does not remove it.
+This guide is not an anti-government-surveillance document, as it only helps you make your information private and does not remove it.
 
 <h2>Hiding Your Whois Data</h2>
 This one should be easy, but it is the number one privacy failure we found when checking information of individuals who have previously been harassed.
@@ -15,7 +15,7 @@ When you register a domain, you fill out contact information which by default is
 If you're not a machine which supports the whois command you can use one of the many [online tools](http://www.whois.net/) to check your the whois records.
 
 If your personal information is available, we advise you to take one of the following actions:
-* Purchase WhoisGuard from your domain from your registrar
+* Purchase WhoisGuard for your domain from your registrar
 * Purchase a domain by proxy plan and have them handle your domains
 * Migrate to a registrar which provides free domain name privacy (namecheap gives it for free your first year)
 
