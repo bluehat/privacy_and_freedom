@@ -57,7 +57,7 @@ You're encouraged to enable 2-factor authentication on everything, but _prioriti
 Here is an [amazing website with directions on how to do 2-factor auth on everything ever](https://twofactorauth.org/).
 
 <h2>Update where password resets go</h2>
-Check through your old accounts. Do you still own the old @comcast.net where you registered your twitter handle to 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location.
+Check through your old accounts. Do you still own the old @comcast.net where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location.
 
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
