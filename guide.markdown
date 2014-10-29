@@ -66,6 +66,14 @@ Convincing you to be an adult overnight is probably a lost cause, so install a p
 
 Whenever possible, set up and use ssh keys instead of passwords.
 
+<h1>The Bad News</h1>
+* If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
+* If you are registered to vote, your contact information can be accessed by any Super-PAC in most states. Becoming one costs about $300 and the records cost $15 to obtain
+* Utility bills in your name, while they are not suppose to be something you can trace, often can be traced
+
+<h2>What you can do</h2>
+* Use a fake last name
+
 <h1>About</h1>
 
 This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/), [Cliff Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
