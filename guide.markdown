@@ -66,6 +66,18 @@ Convincing you to be an adult overnight is probably a lost cause, so install a p
 
 Whenever possible, set up and use ssh keys instead of passwords.
 
+<h1>Disaster Response</h1>
+So you now have the internet's full attention. What precautions can you take to minimize damage? These measures are not for daily use as they are rather inconvenient, but more of a disaster response plan if, for example, your haters get out of hand enough to merit national television reports.
+
+<h2>Freeze your credit<h2>
+You can place a freeze on your credit, thereby preventing people from taking out new debts or credit cards in your name. You will need to freeze your credit with each of the 3 major credit burearus: [Experian](http://www.experian.com/consumer/security_freeze.html), [Transunion](http://www.transunion.com/securityfreeze) and [Equifax](https://www.freeze.equifax.com/Freeze/jsp/SFF_PersonalIDInfo.jsp) Please note: this is a pretty dramatic step. You should read about what it means to freeze your credit and consider the ramifications before doing it. You will also inconvenience yourself significantly if you'd like to take out any new loans or credit cards because you can't do that when you freeze your credit.
+
+<h2>Disable all remote wipe settings</h2>
+Your phone, tablets, and computers generally have settings to remove all of your data using only an internet connection. You normally enable these things because you believe your posessions are more likely to be stolen than the internet is to come hunting for you. When that calculation changes, it is time to disable any settings which permit remote wipes. [Apple products are notoriously sensitive to this issue.](http://www.emptyage.com/post/28679875595/yes-i-was-hacked-hard)
+
+<h2>Double check where your password resets go</h2>
+You can as many postmortem security reports you need to to get the picture: this is the most common way somebody gets control of your online persona. First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town.
+
 <h1>The Bad News</h1>
 * If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
 * If you are registered to vote, your contact information can be accessed by any Super-PAC in most states. Becoming one costs about $300 and the records cost $15 to obtain
