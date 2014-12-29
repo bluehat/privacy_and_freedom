@@ -73,6 +73,7 @@ Whenever possible, set up and use ssh keys instead of passwords.
 
 <h2>What you can do</h2>
 * Use a fake last name
+* Petition your government to make citizen privacy a priority
 
 <h1>About</h1>
 
