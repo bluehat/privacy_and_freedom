@@ -8,7 +8,7 @@ This guide is not an anti-government-surveillance document, as it only helps you
 <h2>Hiding Your Whois Data</h2>
 This one should be easy, but it is the number one privacy failure we found when checking information of individuals who have previously been harassed.
 
-When you register a domain, you fill out contact information which by default is _public_. You can trivially check what information is public in any Linux/OSX terminal
+When you register a domain, you fill out contact information which by default is *public*. You can trivially check what information is public in any Linux/OSX terminal
 
     whois example.com
 
@@ -50,14 +50,14 @@ If you recycle the same profile images over and over, you may be surprised what 
 
 <h1>Make your accounts harder to steal!</h1>
 <h2>2 Factor Authentication</h2>
-We're sure you've been lectured on password security, and while your habits are probably terrible, we're going to focus today instead on 2-factor auth. 2-factor auth requires somebody to know your password _and_ have your phone or another physical device (or at least control over it). 
+We're sure you've been lectured on password security, and while your habits are probably terrible, we're going to focus today instead on 2-factor auth. 2-factor auth requires somebody to know your password *and* have your phone or another physical device (or at least control over it). 
 
-You're encouraged to enable 2-factor authentication on everything, but _prioritize accounts where password resets are sent_.
+You're encouraged to enable 2-factor authentication on everything, but *prioritize accounts where password resets are sent*.
 
 Here is an [amazing website with directions on how to do 2-factor auth on everything ever](https://twofactorauth.org/).
 
 <h2>Update where password resets go</h2>
-Check through your old accounts. Do you still own the old @hotmail.com where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location. You can as many postmortem security reports you need to to get the picture: _this is the most common way somebody gets control of your online persona._ First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town. _Even if you don't put a 2-factor setup anywhere else, put it on the primary email where all your password resets go._
+Check through your old accounts. Do you still own the old @hotmail.com where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location. You can as many postmortem security reports you need to to get the picture: *this is the most common way somebody gets control of your online persona.* First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town. *Even if you don't put a 2-factor setup anywhere else, put it on the primary email where all your password resets go.* If your password resets go all over the place, pick one account, send all the password resets there, and turn on 2-factor there.
 
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
