@@ -57,7 +57,7 @@ You're encouraged to enable 2-factor authentication on everything, but _prioriti
 Here is an [amazing website with directions on how to do 2-factor auth on everything ever](https://twofactorauth.org/).
 
 <h2>Update where password resets go</h2>
-Check through your old accounts. Do you still own the old @hotmail.com where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location. You can as many postmortem security reports you need to to get the picture: <b>this is the most common way somebody gets control of your online persona.</b> First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town.
+Check through your old accounts. Do you still own the old @hotmail.com where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location. You can as many postmortem security reports you need to to get the picture: <b>this is the most common way somebody gets control of your online persona.</b> First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town. <b>Even if you don't put a 2-factor setup anywhere else, put it on the primary email where all your password resets go.</b>
 
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
