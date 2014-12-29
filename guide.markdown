@@ -57,7 +57,7 @@ You're encouraged to enable 2-factor authentication on everything, but _prioriti
 Here is an [amazing website with directions on how to do 2-factor auth on everything ever](https://twofactorauth.org/).
 
 <h2>Update where password resets go</h2>
-Check through your old accounts. Do you still own the old @comcast.net where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location.
+Check through your old accounts. Do you still own the old @hotmail.com where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location. You can as many postmortem security reports you need to to get the picture: <b>this is the most common way somebody gets control of your online persona.</b> First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town.
 
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
@@ -74,9 +74,6 @@ You can place a freeze on your credit, thereby preventing people from taking out
 
 <h2>Disable all remote wipe settings</h2>
 Your phone, tablets, and computers generally have settings to remove all of your data using only an internet connection. You normally enable these things because you believe your posessions are more likely to be stolen than the internet is to come hunting for you. When that calculation changes, it is time to disable any settings which permit remote wipes. [Apple products are notoriously sensitive to this issue.](http://www.emptyage.com/post/28679875595/yes-i-was-hacked-hard)
-
-<h2>Double check where your password resets go</h2>
-You can as many postmortem security reports you need to to get the picture: this is the most common way somebody gets control of your online persona. First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town.
 
 <h1>The Bad News</h1>
 * If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
