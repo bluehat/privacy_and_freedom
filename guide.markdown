@@ -69,7 +69,7 @@ Whenever possible, set up and use ssh keys instead of passwords.
 <h1>Disaster Response</h1>
 So you now have the internet's full attention. What precautions can you take to minimize damage? These measures are not for daily use as they are rather inconvenient, but more of a disaster response plan if, for example, your haters get out of hand enough to merit national television reports.
 
-<h2>Freeze your credit<h2>
+<h2>Freeze your credit</h2>
 You can place a freeze on your credit, thereby preventing people from taking out new debts or credit cards in your name. You will need to freeze your credit with each of the 3 major credit burearus: [Experian](http://www.experian.com/consumer/security_freeze.html), [Transunion](http://www.transunion.com/securityfreeze) and [Equifax](https://www.freeze.equifax.com/Freeze/jsp/SFF_PersonalIDInfo.jsp) Please note: this is a pretty dramatic step. You should read about what it means to freeze your credit and consider the ramifications before doing it. You will also inconvenience yourself significantly if you'd like to take out any new loans or credit cards because you can't do that when you freeze your credit.
 
 <h2>Disable all remote wipe settings</h2>
