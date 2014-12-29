@@ -79,4 +79,4 @@ Whenever possible, set up and use ssh keys instead of passwords.
 
 This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/), [Cliff Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to this gist. If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/354432b82650d0a722ed). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
