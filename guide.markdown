@@ -75,6 +75,9 @@ You can place a freeze on your credit, thereby preventing people from taking out
 <h2>Disable all remote wipe settings</h2>
 Your phone, tablets, and computers generally have settings to remove all of your data using only an internet connection. You normally enable these things because you believe your posessions are more likely to be stolen than the internet is to come hunting for you. When that calculation changes, it is time to disable any settings which permit remote wipes. [Apple products are notoriously sensitive to this issue.](http://www.emptyage.com/post/28679875595/yes-i-was-hacked-hard)
 
+<h2>Remove dropbox and any other systems which can read or write to your hard drive</h2>
+We all love the conveniences of remote cloud backups which appear as folders in our system, but if these systems are compromised, an attacker has [full access to everything on your computer](http://www.polygon.com/2014/8/22/6057317/fez-developer-polytron-hacked-harassment) and the capacity to delete it. 
+
 <h1>The Bad News</h1>
 * If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
 * If you are registered to vote, your contact information can be accessed by any Super-PAC in most states. Becoming one costs about $300 and the records cost $15 to obtain
