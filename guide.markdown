@@ -62,7 +62,7 @@ Check through your old accounts. Do you still own the old @hotmail.com where you
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
 
-Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [KeePass](http://keepass.whinfo/) or [LastPass](https://lastpass.com/).
+Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [KeePass](http://keepass.info/) or [LastPass](https://lastpass.com/).
 
 Whenever possible, set up and use ssh keys instead of passwords.
 
