@@ -62,12 +62,15 @@ Check through your old accounts. Do you still own the old @hotmail.com where you
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
 
-Convincing you to be an adult overnight is probably a lost cause, so install a password manager like [KeePass](http://keepass.info/) or [LastPass](https://lastpass.com/).
+Convincing you to be an adult overnight is probably a lost cause, so install a password manager. [KeePass](http://keepass.info/) is the choice of open-source hippies (like me), while [LastPass](https://lastpass.com/) and [1Password](https://agilebits.com/onepassword) are commercial options.
 
 Whenever possible, set up and use ssh keys instead of passwords.
 
 <h1>Disaster Response</h1>
 So you now have the internet's full attention. What precautions can you take to minimize damage? These measures are not for daily use as they are rather inconvenient, but more of a disaster response plan if, for example, your haters get out of hand enough to merit national television reports.
+
+<h2>Switch to a physical 2FA device</h2>
+Since your phone can be hacked, you may want to consider a physical 2FA device. We don't endorse any particular one, but check it is compatible with the services you plan to use it on.
 
 <h2>Freeze your credit</h2>
 You can place a freeze on your credit, thereby preventing people from taking out new debts or credit cards in your name. You will need to freeze your credit with each of the 3 major credit burearus: [Experian](http://www.experian.com/consumer/security_freeze.html), [Transunion](http://www.transunion.com/securityfreeze) and [Equifax](https://www.freeze.equifax.com/Freeze/jsp/SFF_PersonalIDInfo.jsp) Please note: this is a pretty dramatic step. You should read about what it means to freeze your credit and consider the ramifications before doing it. You will also inconvenience yourself significantly if you'd like to take out any new loans or credit cards because you can't do that when you freeze your credit.
@@ -78,17 +81,25 @@ Your phone, tablets, and computers generally have settings to remove all of your
 <h2>Remove dropbox and any other systems which can read or write to your hard drive</h2>
 We all love the conveniences of remote cloud backups which appear as folders in our system, but if these systems are compromised, an attacker has [full access to everything on your computer](http://www.polygon.com/2014/8/22/6057317/fez-developer-polytron-hacked-harassment) and the capacity to delete it. 
 
+<h2>Opt out of 3rd party data retention</h2>
+If you find that you are removing your data online, particularly whois, you may want to consider opting out of the people searching services which store that data online for purchase. Some of them require you to pay them to do this. That is bad behavior and they should feel bad.
+
 <h1>The Bad News</h1>
 * If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
 * If you are registered to vote, your contact information can be accessed by any Super-PAC in most states. Becoming one costs about $300 and the records cost $15 to obtain
 * Utility bills in your name, while they are not suppose to be something you can trace, often can be traced
+* Your cell phone may well be a weak point in your 2FA plan, especially via text. Some providers have sub-par security and permit you to read your texts online. You can get a new text number from one of many online services and simply not give it out to anybody to mitigate this. Google Voice does not work with all 2FA systems.
+* You currently need to begin Apple's 2FA process super early because they have a waiting period.
 
 <h2>What you can do</h2>
 * Use a fake last name
+
+<h1>Ways to help even if you are not experincing online harassment</h1>
 * Petition your government to make citizen privacy a priority
+* Petition sites you love to enable 2FA
 
 <h1>About</h1>
 
-This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's coworkers at [Crooked Tree Studios](http://throwtrucks.com/), [Cliff Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
+This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's former coworkers at [Crooked Tree Studios](http://throwtrucks.com/), [Cliff Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/354432b82650d0a722ed). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
