@@ -82,7 +82,10 @@ Your phone, tablets, and computers generally have settings to remove all of your
 We all love the conveniences of remote cloud backups which appear as folders in our system, but if these systems are compromised, an attacker has [full access to everything on your computer](http://www.polygon.com/2014/8/22/6057317/fez-developer-polytron-hacked-harassment) and the capacity to delete it. 
 
 <h2>Opt out of 3rd party data retention</h2>
-If you find that you are removing your data online, particularly whois, you may want to consider opting out of the people searching services which store that data online for purchase. Some of them require you to pay them to do this. That is bad behavior and they should feel bad.
+If you find that you are removing your data online, particularly whois, you may want to consider opting out of the people searching services which store that data online for purchase. Some of them require you to pay them to do this or provide very personal information. That is bad behavior and they should feel bad. There is also an entire 3rd party market for paying services to remove your data. Reddit has compiled [a list](https://www.reddit.com/r/technology/comments/j1mit/how_to_remove_yourself_from_all_background_check/) of major companies and how to opt out, though we don't have experience working with these companies, some seem shady, and some of the info seems out of date.
+
+<h2>Get on the Do Not Call List</h2>
+Many harassers don't make the calls themselves but instead sign you up as interested for potential services, and then have those services disrupt you. Getting on the [Do Not Call List](https://www.donotcall.gov/) will severely diminish the number of calls that get through.
 
 <h1>The Bad News</h1>
 * If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
