@@ -75,6 +75,9 @@ Since your phone can be hacked, you may want to consider a physical 2FA device. 
 <h2>Freeze your credit</h2>
 You can place a freeze on your credit, thereby preventing people from taking out new debts or credit cards in your name. You will need to freeze your credit with each of the 3 major credit burearus: [Experian](http://www.experian.com/consumer/security_freeze.html), [Transunion](http://www.transunion.com/securityfreeze) and [Equifax](https://www.freeze.equifax.com/Freeze/jsp/SFF_PersonalIDInfo.jsp) Please note: this is a pretty dramatic step. You should read about what it means to freeze your credit and consider the ramifications before doing it. You will also inconvenience yourself significantly if you'd like to take out any new loans or credit cards because you can't do that when you freeze your credit.
 
+<h2>Get rid of all debit cards and only use credit cards and ATM cards</h2>
+If you debit card information is stolen, an attacker can clean out your entire account and the onus is on you to get things back to how they were. Credit cards are required by law to have far more strict rules, and you have a lot more options to control the situation. Ask your bank to give you ATM-only cards and credit-only cards. Warning: You now need either an Amex card or cash to go to Costco.
+
 <h2>Disable all remote wipe settings</h2>
 Your phone, tablets, and computers generally have settings to remove all of your data using only an internet connection. You normally enable these things because you believe your posessions are more likely to be stolen than the internet is to come hunting for you. When that calculation changes, it is time to disable any settings which permit remote wipes. [Apple products are notoriously sensitive to this issue.](http://www.emptyage.com/post/28679875595/yes-i-was-hacked-hard)
 
