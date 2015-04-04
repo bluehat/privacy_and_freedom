@@ -90,6 +90,9 @@ If you find that you are removing your data online, particularly whois, you may 
 <h2>Get on the Do Not Call List</h2>
 Many harassers don't make the calls themselves but instead sign you up as interested for potential services, and then have those services disrupt you. Getting on the [Do Not Call List](https://www.donotcall.gov/) will severely diminish the number of calls that get through.
 
+<h2>Traditional identity theft</h2>
+While rare for those facing online abuse, this absolutely is possible if enough information about you becomes public. [/r/personalfinance has an excellent guide on their wiki](https://np.reddit.com/r/personalfinance/wiki/identity_theft). Thankfully, many of the steps are things you were probably doing already from this guide.
+
 <h1>The Bad News</h1>
 * If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
 * If you are registered to vote, your contact information can be accessed by any Super-PAC in most states. Becoming one costs about $300 and the records cost $15 to obtain
