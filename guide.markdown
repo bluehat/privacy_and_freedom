@@ -1,5 +1,5 @@
 <h1>Privacy Guide for Activists with Haters</h1>
-In light of the gamergate fiasco, we realized that most of the targeted individuals had their private information trivially publicly online. This guide is meant to help people take basic steps required to protect their online privacy, hopefully reducing the number of crazies who threaten to show up at your house.
+In light of the gamergate fiasco, we realized that most of the targeted individuals had their private information trivially publicly online. Later, several authors had more immediate experience with online harassment. This guide is meant to help people take basic steps required to protect their online privacy, hopefully reducing the number of crazies who threaten to show up at your house.
 
 We do not believe that leaving your information online means you deserve harassment, we simply wish to arm people who want to speak up with all the defensive tools available.
 
