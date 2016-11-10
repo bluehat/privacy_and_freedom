@@ -1,20 +1,24 @@
-# Why
+# 0: Why
 
 America is about to hand the architecture for a surveillence police state to a dictator. To ensure personal freedom of speech, and possibly a future re-birth of a free press, it is important that citizens learn to communicate privately and what options are available to get around internet censorship.
 
-The goal of this guide is to create lesson plans which nontechnical people can read themselves, and which technical people can use to run classes for groups of less technical people.
+The goal of this guide is to create lesson plans which nontechnical people can read themselves, and which technical people can use to run classes for groups of less technical people. 
+
+Calling this a rough draft would be generous. Help is appreciated, especially by more technical people to provide content, and less technical people to explain what areas are not clear.
 
 This guide will not make you safe. It will increase your chances of safety.
 
-# 0: Security, Authentication, and Encryption
+# 1: Communication Privacy
 
-## Security
+## 0: Security, Authentication, and Encryption
+
+### Security
 Security means that your messages can't be understood by anybody except the party you are sending them to.
 
-## Authentication
+### Authentication
 Authentication means the person who is getting your messages is the person you want to have your messages. Most security technology will successfully auto-establish a secure connection on its own, but you need to take extra precautions to make sure you are talking to the correct person on the secure channel.
 
-## Encryption
+### Encryption
 We are working with public-private key encryption.
 
 Key-based encryption is like an old-time wax seal people used to seal letters, except it actually works.
@@ -31,7 +35,7 @@ Getting somebody else's public key is hard. If your key is sent by the internet,
 
 This is why you need to worry about both security and authentication. The technology will make you secure, but you will always need to take precautions to make sure the person you think you are speaking with is the one you intended to speak with.
 
-# 1: Signal / Securing your SMS
+## 1: Signal / Securing your SMS
 
 Open source, peer-reviewed, and [endorsed by Edward Snowden](https://www.youtube.com/watch?v=j_kieJ-Ng2Q), [https://whispersystems.org/](Signal) is an easy first step for anybody interested in basic security. It has been on both the Android and iOS app stores for many years, and works with most phone OS versions.
 
@@ -45,7 +49,19 @@ If you get a new phone, you will currently have to re-do key exchanges. This is 
 
 You can download signal on the app store or [through their website](https://whispersystems.org/).
 
-# 2: VPNs / Seeing Websites Blocked by a Government
+## 2: Full Disk Encryption
+
+## 3: Encrypting Your Email
+
+# 2: Anti-Censorship
+
+## 0: Censorship Mechanics
+
+Governments such as China outright block many websites outside their country. Governments like Pakistan are intercepting all outbound traffic before it leaves the country so they can watch it.
+
+These measures are meant to help you keep access to content which a dictatorship does not want you to see.
+
+## 1: VPNs 
 
 A VPN, or Virtual Private Network, is essentially a computer based somewhere else. You make a secure tube from your internet to that other placem and look through it. You can use this computer to see whatever the internet looks like from the perspective of that computer. This means that if a website is blocked in your country, you can use a VPN to "get to the internet" in another country, and then see the website.
 
@@ -58,3 +74,5 @@ This is why you want the other end of your VPN to come out in a place not contro
 To set up a VPN, you will need to get an endpoint (normally a rented machine in a data center) and to configure your computer so all traffic goes through that endpoint. We are working to figure out easy ways to make this technology accessible to less technical people.
 
 Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
+
+## 2: Tor
