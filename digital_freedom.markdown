@@ -54,6 +54,10 @@ You can download signal on the app store or [through their website](https://whis
 
 ## 1.2: Adding Encryption to Existing Messaging Protocols
 
+### OTR for Adium
+
+### XMPP
+
 ## 1.3: Encrypting Your Email
 
 # 2: Anti-Censorship
