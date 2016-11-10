@@ -11,9 +11,9 @@ Calling this a rough draft would be generous. Help is appreciated, especially fr
 
 This guide will not make you safe. It will increase your chances of safety.
 
-# 1: Communication Privacy
+# 1.: Communication Privacy
 
-## 1.0: Security, Authentication, and Encryption
+## 1.0.: Security, Authentication, and Encryption
 
 ### Security
 Security means that your messages can't be understood by anybody except the party you are sending them to.
