@@ -58,7 +58,9 @@ You can download signal on the app store or [through their website](https://whis
 
 ### XMPP
 
-## 1.3: Encrypting Your Email
+## 1.3 Secured Messaging Protocols
+
+## 1.4: Encrypting Your Email
 
 # 2: Anti-Censorship
 
@@ -86,7 +88,7 @@ Iceland has shown an interest in being a center for digital freedom. Further res
 
 # 3: Information Distribution, Verification, and Storage
 
-## 3.0: Distribution and Protection Needs
+# 3.0: Distribution and Protection Needs
 
 ### Known Compromised Systems
 Windows 10's EULA stipulates that information from your machine can be taken for government use. This is why there will be a lesson in installing Linux.
@@ -96,3 +98,15 @@ Windows 10's EULA stipulates that information from your machine can be taken for
 ## 3.2: Signatures and Checksums
 
 ## 3.3: Full Disk Encryption
+
+# 4: Anonymity
+
+## 4.0: Need
+
+## 4.1: Remailers
+
+# 5: Legal 
+
+## 5.0 Description
+
+## 5.1 No Fingerprint Readers to Unlock Things
