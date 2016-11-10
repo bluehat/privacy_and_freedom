@@ -1,6 +1,5 @@
 # 0: Why
-
-America is about to hand the architecture for a surveillence police state to a dictator. To ensure personal freedom of speech, and possibly a future re-birth of a free press, it is important that citizens learn to communicate privately and what options are available to get around internet censorship.
+We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling. This seems like an excellent time for us to evaluate the state of the internet, and education on how technology can be used to protect citizen's civil liberties.
 
 The goal of this guide is to create lesson plans which nontechnical people can read themselves, and which technical people can use to run classes for groups of less technical people. 
 
