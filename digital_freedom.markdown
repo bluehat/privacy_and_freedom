@@ -116,3 +116,9 @@ Windows 10's EULA stipulates that information from your machine can be taken for
 ## 5.0 Description
 
 ## 5.1 No Fingerprint Readers to Unlock Things
+
+# 6: Contributing to Internet Freedom
+
+## 6.0: Explanation
+
+## 6.1: Running a Tor Exit Node
