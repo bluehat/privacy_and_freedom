@@ -33,8 +33,6 @@ This is why you need to worry about both security and authentication. The techno
 
 # 1: Signal / Securing your SMS
 
-The government is extremely open about having all your SMSes.
-
 Open source, peer-reviewed, and [endorsed by Edward Snowden](https://www.youtube.com/watch?v=j_kieJ-Ng2Q), [https://whispersystems.org/](Signal) is an easy first step for anybody interested in basic security. It has been on both the Android and iOS app stores for many years, and works with most phone OS versions.
 
 Remember that until you have also authenticated your contacts using "verify safety numbers" (in the conversation settings on the android version) you can be sure whoever is getting your information gets it securely, but you will not have a guarantee that the person who is getting it is the person you want to get it.
