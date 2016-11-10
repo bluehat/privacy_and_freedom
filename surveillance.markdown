@@ -1,7 +1,7 @@
 # 0: Why
 We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling. This seems like an excellent time for us to evaluate the state of the internet, and education on how technology can be used to protect citizen's civil liberties.
 
-The goal of this guide is to create lesson plans which nontechnical people can read themselves, and which technical people can use to run classes for groups of less technical people. 
+The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. 
 
 Calling this a rough draft would be generous. Help is appreciated, especially from 
 1. More technical people to provide content.
@@ -21,7 +21,7 @@ Security means that your messages can't be understood by anybody except the part
 ### Authentication
 Authentication means the person who is getting your messages is the person you want to have your messages. Most security technology will successfully auto-establish a secure connection on its own, but you need to take extra precautions to make sure you are talking to the correct person on the secure channel.
 
-### Encryption
+### Communication Encryption
 We are working with public-private key encryption.
 
 Key-based encryption is like an old-time wax seal people used to seal letters, except it actually works.
@@ -52,7 +52,7 @@ If you get a new phone, you will currently have to re-do key exchanges. This is 
 
 You can download signal on the app store or [through their website](https://whispersystems.org/).
 
-## 1.2: Full Disk Encryption
+## 1.2: Adding Encryption to Existing Messaging Protocols
 
 ## 1.3: Encrypting Your Email
 
@@ -79,3 +79,13 @@ To set up a VPN, you will need to get an endpoint (normally a rented machine in 
 Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
 
 ## 2.2: Tor
+
+# 3 Information Distribution, Verification, and Storage
+
+## 3.0 Distribution and Protection Needs
+
+## 3.1 Torrenting
+
+## 3.2 Signatures and Checksums
+
+## 3.3 Full Disk Encryption
