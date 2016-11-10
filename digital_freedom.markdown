@@ -91,8 +91,8 @@ Iceland has shown an interest in being a center for digital freedom. Further res
 ### Known Compromised Systems
 Windows 10's EULA stipulates that information from your machine can be taken for government use. This is why there will be a lesson in installing Linux.
 
-## 3.2: Torrenting
+## 3.1: Torrenting
 
-## 3.3: Signatures and Checksums
+## 3.2: Signatures and Checksums
 
 ## 3.3: Full Disk Encryption
