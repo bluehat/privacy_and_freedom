@@ -80,12 +80,17 @@ Iceland has shown an interest in being a center for digital freedom. Further res
 
 ## 2.2: Tor
 
-# 3 Information Distribution, Verification, and Storage
+# 3: Information Distribution, Verification, and Storage
 
-## 3.0 Distribution and Protection Needs
+## 3.0: Distribution and Protection Needs
 
-## 3.1 Torrenting
+### Known Compromised Systems
+Windows 10's EULA stipulates that information from your machine can be taken for government use.
 
-## 3.2 Signatures and Checksums
+#### Linux
 
-## 3.3 Full Disk Encryption
+## 3.2: Torrenting
+
+## 3.3: Signatures and Checksums
+
+## 3.3: Full Disk Encryption
