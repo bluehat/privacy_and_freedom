@@ -99,11 +99,17 @@ Windows 10's EULA stipulates that information from your machine can be taken for
 
 ## 3.3: Full Disk Encryption
 
+## 3.4: Destroying a Hard Drive
+
 # 4: Anonymity
 
 ## 4.0: Need
 
 ## 4.1: Remailers
+
+## 4.2: Your IP Address
+
+## 4.3: What Is a Clean Computer?
 
 # 5: Legal 
 
