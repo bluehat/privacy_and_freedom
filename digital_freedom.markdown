@@ -4,10 +4,10 @@ We're about to hand the architecture for a surveillance police state over to new
 The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. 
 
 Calling this a rough draft would be generous. Help is appreciated, especially from 
-1. More technical people to provide content.
-1. Less technical people to explain what areas are not clear.
-1. People who can make illustrations and diagrams to make complicated concepts simple
-1. People with teaching experience to help figure out how to break this into a course people can teach each other
+ 1. More technical people to provide content.
+ 1. Less technical people to explain what areas are not clear.
+ 1. People who can make illustrations and diagrams to make complicated concepts simple
+ 1. People with teaching experience to help figure out how to break this into a course people can teach each other
 
 This guide will not make you safe. It will increase your chances of safety.
 
