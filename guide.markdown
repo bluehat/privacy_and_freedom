@@ -3,7 +3,7 @@ In light of the gamergate fiasco, we realized that most of the targeted individu
 
 We do not believe that leaving your information online means you deserve harassment, we simply wish to arm people who want to speak up with all the defensive tools available.
 
-This guide is not an anti-government-surveillance document, as it only helps you make your information private and does not remove it.
+This guide is not an anti-government-surveillance document, as it only helps you make your information private and does not remove it. Fighting back against surveilance is a very different problem, and there is a [separate guide for that.](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9)
 
 <h2>Hiding Your Whois Data</h2>
 This one should be easy, but it is the number one privacy failure we found when checking information of individuals who have previously been harassed.
