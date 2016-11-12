@@ -3,7 +3,7 @@ We're about to hand the architecture for a surveillance police state over to new
 
 The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. 
 
-Calling this a rough draft would be generous. Help is appreciated, especially from 
+Calling this a rough draft would be generous. Help is appreciated, especially from: 
  1. More technical people to provide content.
  1. Less technical people to explain what areas are not clear.
  1. People who can make illustrations and diagrams to make complicated concepts simple
@@ -22,21 +22,23 @@ Security means that your messages can't be understood by anybody except the part
 Authentication means the person who is getting your messages is the person you want to have your messages. Most security technology will successfully auto-establish a secure connection on its own, but you need to take extra precautions to make sure you are talking to the correct person on the secure channel.
 
 ### Communication Encryption
-We are working with public-private key encryption.
+We are working with public key cryptopgraphy.
 
-Key-based encryption is like an old-time wax seal people used to seal letters, except it actually works.
+Public key cryptography is like an old-time wax seal people used to seal letters, except it actually works because it relies on math instead of people's trustworthiness and inability to manufacture knockoff wax seal-makers.
 
-Encryption works by making things hard for a computer to read. This means that we had to figure out a way to make data look random, while also having a way to open it, without anybody else being able to calculate how to open it.
+You can [more detailed explanations of public key cryptography](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/) but for our purposes just remember you have two things called keys, but which are actually large (hundred+ digit) numbers. One is called your public key, and one is callled your private key. 
 
-For this, we needed a kind of math computers are bad at.
+Your private key is the equivalent of the stamp which makes your wax seal: it is used to sign documents. If anybody ever steals the stamp you use to make little wax seals, you are in deep water. You must protect it.
 
-Computers are bad at guessing prime numbers.
+Your public key is the trusted courier who brings your letters. In old-times, the message sender sent one of their messengers, but in the computer world the message sender already has your public key. This is as if you sent a box that made courier robots whenever you pressed a button (like a Meeseeks box from Rick and Morty) whose purpose was always to bring you your letters to you. Then, when somebody wanted to send you a letter, they could just have the box you gave them make a robot/meeseek to bring you that letter. 
 
-How this works is you get two big (several hundred digit long) numbers. One (your private key) is used to sign stuff and prove you wrote it, and the other (your public key) functions as a sort of inbox. You can use your private key and somebody else's public key to make a message only they can read, and that they know you sent.
+The one thing the math can not solve is making sure you do the setup work with the right person. Imagine you and your friend have never sent messages each way before. The first thing you'd have to do is exchange robot/meeseek-generating boxes and show them what your wax seal looks like. If you do this over the internet, you're basically sending a courier nobody's met before who is just going to show up and claim to be working for you. 
 
-Getting somebody else's public key is hard. If your key is sent by the internet, somebody in the middle can switch out the key you are suppose to get with one the bad person can read. Normally key exchange is done in person, or by a method which is built off a network of people verifying keys in person.
+Your friend can't trust that courier. A bad person could catch the courier at a crossroads and kill them. Then they could steal your courier's uniform, send their own courier, and deliver a box which they claim will send messages to you but will really send messages to the bad guy instead. If they did this to both of you all the messages on both sides would be delivered instead to the bad person. If the bad person was diligant about forwarding the messages with their setup, you and your friend would never know there was somebody in the middle watching everything you do. This is why key/robot/meeseek box exchanges are normally done in person, or by a method which is built off a network of people verifying keys in person. In the security community, they are often added to people's business cards.
 
 This is why you need to worry about both security and authentication. The technology will make you secure, but you will always need to take precautions to make sure the person you think you are speaking with is the one you intended to speak with.
+
+*Short Version: Your private key is very secret, like your social security number is suppose to be. Your public key is something you can tell to whoever you want, like a phone number. Don't trust keys if you aren't sure they belong to your friends*
 
 ## 1.1: Signal / Securing your SMS
 
