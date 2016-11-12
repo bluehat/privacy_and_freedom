@@ -97,7 +97,9 @@ Iceland has shown an interest in being a center for digital freedom. Further res
 # 3.0: Distribution and Protection Needs
 
 ### Known Compromised Systems
-[Windows 10's EULA stipulates that everything you do on your computer will be logged by Microsoft, and that these logs will be available to the government.](http://www.newsweek.com/windows-10-recording-users-every-move-358952) This is why there will be a lesson in installing Linux.
+[Windows 10's EULA stipulates that everything you do on your computer will be logged by Microsoft, and that these logs will be available to the government.](http://www.newsweek.com/windows-10-recording-users-every-move-358952) This is why there will be a lesson in installing an option other than Windows called Linux.
+
+Linux is not made by a single company. It has a core, and a wide variety of distributions have been built on that. There are conflicting borderline religious opinions on what distribution is best. [Ubuntu](https://www.ubuntu.com/desktop) is often reccommended for biggers, though the people who make it have become opinionated and sometimes force new things on users they are less than excited about (still nothing compared to what Windows does). Ubuntu's big sister is Debian. Debian is a much more conservative operating system, but is not specifically polished to be beginner friendly.
 
 ## 3.1: Torrenting
 
