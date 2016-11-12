@@ -34,7 +34,7 @@ You can [more detailed explanations of public key cryptography](https://blog.vry
 
 Your private key is the equivalent of the stamp which makes your wax seal: it is used to sign documents. If anybody ever steals the stamp you use to make little wax seals, you are in deep water. **You must protect your private key.**
 
-Your public key is the address of a mailbox which only you can open.
+Your public key is the address of a secured mailbox.
 
 The keys are inherrently linked. They are set up so that your private key (thing which makes your wax seals) is the only thing which can open your mailbox, and your public key (the address of your mailbox) can be used to verify the authenticity of the wax seal on your letters.
 
