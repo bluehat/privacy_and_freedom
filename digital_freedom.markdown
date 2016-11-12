@@ -38,7 +38,7 @@ Your friend can't trust that courier. A bad person could catch the courier at a 
 
 This is why you need to worry about both security and authentication. The technology will make you secure, but you will always need to take precautions to make sure the person you think you are speaking with is the one you intended to speak with.
 
-*Short Version: Your private key is very secret, like your social security number is suppose to be. Your public key is something you can tell to whoever you want, like a phone number. Don't trust keys if you aren't sure they belong to your friends*
+*Short Version: Your private key is very secret: more secret even than your social security number should be, because your government and banks and stuff don't know it. Your public key is something you can tell to whoever you want, like a phone number. Don't trust keys if you aren't sure they belong to your friends*
 
 ## 1.1: Signal / Securing your SMS
 
