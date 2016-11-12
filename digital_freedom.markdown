@@ -26,13 +26,11 @@ Security means that your messages can't be understood by anybody except the part
 Authentication means the person who is getting your messages is the person you want to have your messages. Most security technology will successfully auto-establish a secure connection on its own, but you need to take extra precautions to make sure you are talking to the correct person on the secure channel.
 
 ### Communication Encryption
-We are working with public key cryptopgraphy.
+We are working with public key cryptopgraphy. Public key cryptography is like an old-time wax seal people used to seal letters, except it actually works.
 
-Public key cryptography is like an old-time wax seal people used to seal letters, except it actually works.
+To keep it simple: you have two things called keys, but which are actually large (hundred+ digit) numbers. One is called your public key, and one is callled your private key. 
 
-You can [more detailed explanations of public key cryptography](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/) but for our purposes just remember you have two things called keys, but which are actually large (hundred+ digit) numbers. One is called your public key, and one is callled your private key. 
-
-Your private key is the equivalent of the stamp which makes your wax seal: it is used to sign documents. If anybody ever steals the stamp you use to make little wax seals, you are in deep water. **You must protect your private key.**
+Your private key is like the stamp which makes your wax seal: it is used to sign documents. If anybody ever steals your private key that is very bad. **You must protect your private key.**
 
 Your public key is the address of a secured mailbox.
 
@@ -99,7 +97,7 @@ Iceland has shown an interest in being a center for digital freedom. Further res
 # 3.0: Distribution and Protection Needs
 
 ### Known Compromised Systems
-Windows 10's EULA stipulates that information from your machine can be taken for government use. This is why there will be a lesson in installing Linux.
+[Windows 10's EULA stipulates that everything you do on your computer will be logged by Microsoft, and that these logs will be available to the government.](http://www.newsweek.com/windows-10-recording-users-every-move-358952) This is why there will be a lesson in installing Linux.
 
 ## 3.1: Torrenting
 
