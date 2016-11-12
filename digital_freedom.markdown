@@ -28,21 +28,23 @@ Authentication means the person who is getting your messages is the person you w
 ### Communication Encryption
 We are working with public key cryptopgraphy.
 
-Public key cryptography is like an old-time wax seal people used to seal letters, except it actually works because it relies on math instead of people's trustworthiness and inability to manufacture knockoff wax seal-makers.
+Public key cryptography is like an old-time wax seal people used to seal letters, except it actually works.
 
 You can [more detailed explanations of public key cryptography](https://blog.vrypan.net/2013/08/28/public-key-cryptography-for-non-geeks/) but for our purposes just remember you have two things called keys, but which are actually large (hundred+ digit) numbers. One is called your public key, and one is callled your private key. 
 
-Your private key is the equivalent of the stamp which makes your wax seal: it is used to sign documents. If anybody ever steals the stamp you use to make little wax seals, you are in deep water. You must protect it.
+Your private key is the equivalent of the stamp which makes your wax seal: it is used to sign documents. If anybody ever steals the stamp you use to make little wax seals, you are in deep water. **You must protect your private key.**
 
-Your public key is the trusted courier who brings your letters. In old-times, the messege sender sent one of their messengers, but in the computer world the messege sender already has your public key. This is as if you sent a box that made courier robots whenever you pressed a button (like a Meeseeks box from Rick and Morty) whose purpose was always to bring you your letters to you. Then, when somebody wanted to send you a letter, they could just have the box you gave them make a robot/meeseek to bring you that letter. 
+Your public key is the address of a mailbox which only you can open.
 
-The one thing the math can not solve is making sure you do the setup work with the right person. Imagine you and your friend have never sent messeges each way before. The first thing you'd have to do is exchange robot/meeseek-generating boxes and show them what your wax seal looks like. If you do this over the internet, you're basically sending a courier nobody's met before who is just going to show up and claim to be working for you. 
+The keys are inherrently linked. They are set up so that your private key (thing which makes your wax seals) is the only thing which can open your mailbox, and your public key (the address of your mailbox) can be used to verify the authenticity of the wax seal on your letters.
 
-Your friend can't trust that courier. A bad person could catch the courier at a crossroads and kill them. Then they could steal your courier's uniform, send their own courier, and deliver a box which they claim will send messages to you but will really send messages to the bad guy instead. If they did this to both of you all the messages on both sides would be delivered instead to the bad person. If the bad person was diligant about forwarding the messages with their setup, you and your friend would never know there was somebody in the middle watching everything you do. This is why key/robot/meeseek box exchanges are normally done in person, or by a method which is built off a network of people verifying keys in person. In the security community, they are often added to people's business cards.
+The one thing the math can not solve is making sure you do the setup work with the right person. Imagine you and your friend have never sent messeges each way before. The first thing you'd have to do is tell your friend where your mailbox is and show them how to verify your wax seal's authenticity. If you do this over the internet, you're basically sending a courier nobody's met before who is just going to show up and claim to be working for you. 
+
+Your friend can't trust that courier. A bad person could catch the courier at a crossroads and kill them. Then they could steal your courier's uniform, send their own courier, and give your friend the address of a mailbox they claim belongs to you, but really belongs to the bad guy. If they did this to both of you all the messages on both sides would be delivered instead to the bad person. If the bad person was diligant about forwarding the messages with their setup, you and your friend would never know there was somebody in the middle watching everything you do. This is why mailbox address / public key exchanges are normally done in person, or by a method which is built off a network of people verifying keys in person. In the security community, they are often added to people's business cards.
 
 This is why you need to worry about both security and authentication. The technology will make you secure, but you will always need to take precautions to make sure the person you think you are speaking with is the one you intended to speak with.
 
-*Short Version: Your private key is very secret: more secret even than your social security number should be, because your government and banks and stuff don't know it. Your public key is something you can tell to whoever you want, like a phone number. Don't trust keys if you aren't sure they belong to your friends*
+**Short Version: Your private key is very secret: way more secret even than your social security number ought to be. Your public key is something you can tell to whoever you want, like a phone number. Don't trust keys if you aren't sure they belong to your friends**
 
 ## 1.1: Signal / Securing your SMS
 
@@ -52,7 +54,7 @@ Remember that until you have also authenticated your contacts using "verify safe
 
 Outside actors will be able to determine who you communicated with and when, but not what you said.
 
-If your phone is hacked by something else (like maybe you downloading shady apps) your texts will still be readable by whoever has hacked your phone.
+If your phone is hacked by something else (like maybe you downloading shady apps) your texts will still be readable by whoever has hacked your phone. That person could also gain access to your private keys.
 
 If you get a new phone, you will currently have to re-do key exchanges. This is an issue with Signal, not with the underlying technology.
 
