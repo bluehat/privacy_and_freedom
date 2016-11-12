@@ -13,6 +13,8 @@ Calling this a rough draft would be generous. Help is appreciated, especially fr
 
 This guide will not make you safe. It will increase your chances of safety.
 
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
+
 # 1: Communication Privacy
 
 ## 1.0: Security, Authentication, and Encryption
