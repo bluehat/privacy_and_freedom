@@ -1,3 +1,5 @@
+# A Citizen's Guide to Digital Freedoms
+
 # 0: Why
 We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling. This seems like an excellent time for us to evaluate the state of the internet, and education on how technology can be used to protect citizen's civil liberties.
 
