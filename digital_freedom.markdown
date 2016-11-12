@@ -120,6 +120,7 @@ Iceland has shown an interest in being a center for digital freedom. Further res
 # 5: Legal 
 
 ## 5.0 Description
+The primary author is not a lawyer, and none of the colaborators are known to be one either. This document is not legal advice. 
 
 ## 5.1 No Fingerprint Readers to Unlock Things
 
