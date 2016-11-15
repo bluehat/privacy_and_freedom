@@ -1,6 +1,8 @@
 # A Citizen's Guide to Digital Freedoms
 
-# 0: Why
+# 0: Background
+
+## 0.0: Why
 We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling, and a [campaign advisor has already threatened a reporter](http://www.cnn.com/2016/11/13/politics/kellyanne-conway-harry-reid-lawsuit/). This seems like an excellent time for us to create nontechnical educational information on how technology can be used to protect citizen's civil liberties.
 
 The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. 
@@ -15,9 +17,7 @@ This guide will not make you safe. It will increase your chances of remaining sa
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
 
-# 1: Communication Privacy
-
-## 1.0: Security, Authentication, Encryption, and Expiration
+## 0.1: Security, Authentication, Encryption, and Expiration
 
 ### Security
 Security means that your messages can't be understood by anybody except the party you are sending them to.
@@ -47,6 +47,14 @@ This is why you need to worry about both security and authentication. The techno
 ### Expiration
 
 Over a long enough time, all crytography can be cracked. Your data can live on a disk as long time as computers improve. You should not keep logs you don't want found out, and you should use services which don't log whenever possible, but if a government is logging you, they can use the logs from their servers. You'll need to remember that cryptography is not hiding what you are doing from the government forever. Instead it is delaying the government's capacity to read what you say and do for a certain number of years. This is why if freedom of speech/press is gone for too long of a time, technology will begin enforcing its absence.
+
+# 1: Communication Privacy
+
+## 1.0: What is this and why?
+
+The government, by default, collects a lot of information about you. Much of this is done through the [phone companies](https://www.theguardian.com/business/2016/oct/25/att-secretly-sells-customer-data-law-enforcement-hemisphere), but there are some serious allegations that more internet providers do this as well.
+
+This section helps you communicate with other people while reducing your chances of having your message intercepted or tampered with.
 
 ## 1.1: Signal / Securing your SMS
 
@@ -194,6 +202,12 @@ The primary author is not a lawyer, and none of the colaborators are known to be
 
 ## 6.0: Explanation
 
+
+
 ## 6.1: Running a Tor Exit Node
 
+This is a huge service to the public, but does sometimes expose you to harassment from the federal government. One of the greatest concerns about the security of Tor comes from the number of exit nodes which are controlled by the US government, so helping run more non-government nodes is a very big deal. Here is [Noisebridge's guide on responding to federal inqueries about their tor exit node](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI). 
+
 ## 6.2: Running a Bittorrent Mirror for Activist Information
+
+## 6.3: Configuring Your Phone to Detect IMSI Catchers
