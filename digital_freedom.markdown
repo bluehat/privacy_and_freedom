@@ -11,7 +11,7 @@ Calling this a rough draft would be generous. Help is appreciated, especially fr
  1. People who can make illustrations and diagrams to make complicated concepts simple
  1. People with teaching experience to help figure out how to break this into a course people can teach each other
 
-This guide will not make you safe. It will increase your chances of remaining safe for longer.
+This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, please skip to 3.0 for a discussion of your options before attempting to secure a Window 10 machine.**
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
 
@@ -46,7 +46,7 @@ This is why you need to worry about both security and authentication. The techno
 
 ### Expiration
 
-Over a long enough time, all crytography can be cracked. Your data can live on a disk as long time as computers improve. You should not keep logs you don't want found out, but if a government is logging you, they can use the logs from their servers. You'll need to remember that cryptography is not hiding what you are doing from the government forever. Instead it is delaying the government's capacity to read what you say and do for a certain number of years. This is why if freedom of speech/press is gone for too long of a time, technology will begin enforcing its absence.
+Over a long enough time, all crytography can be cracked. Your data can live on a disk as long time as computers improve. You should not keep logs you don't want found out, and you should use services which don't log whenever possible, but if a government is logging you, they can use the logs from their servers. You'll need to remember that cryptography is not hiding what you are doing from the government forever. Instead it is delaying the government's capacity to read what you say and do for a certain number of years. This is why if freedom of speech/press is gone for too long of a time, technology will begin enforcing its absence.
 
 ## 1.1: Signal / Securing your SMS
 
@@ -64,11 +64,35 @@ You can download signal on the app store or [through their website](https://whis
 
 ## 1.2: Adding Encryption to Existing Messaging Protocols
 
-### OTR for Adium
+### OTR for Pidgin / Adium
+
+[Pidgin (Windows and Linux)](https://www.pidgin.im/) and [Adium (OSX)](https://adium.im/) are pieces of software used to connect to many kinds of messaging accounts at once. This means you can be active on more than one Google Talk / Hangouts account at once. Facebook messenger can also be routed through it. Time travelers will be happy to know you can also have this interface handle AIM, MSN, ICQ and a lot more. Adium and Pidgin happen to be the same system reskinned for different operating systems, but this is a common piece of software, and you can find lots of other pieces that do the same thing.
+
+The Pidgin/Adium system has a great plugin called OTR, which is written by the group [Cypherpunks](https://otr.cypherpunks.ca/). OTR means Off The Record, and turns on encryption end-to-end with anybody else who has installed the plugin. Remember that authentication is a differnet problem than security, and that you should make sure any new keys actually belong to your friends before discussing anything really important.
+
+When your messages are encrypted, if you have them synched to your phone or other non-encrypted views, they will look like gibberish on your phone because your phone will only see the encrypted version.
+
+Here is [how you set up OTR on Adium](https://adium.im/help/pgs/AdvancedFeatures-OTREncryption.html). The Pidgin setup is a little bit more involved. [Windows has its own installer](https://otr.cypherpunks.ca/index.php#downloads) which you run separately. [Linux instructions](https://ssd.eff.org/en/module/how-use-otr-linux) vary by distribution, but generally there is a separate package for pidgin with OTR already installed that is handled by your package manager. 
+
+Pidgin is not as reliable as it could be for video chat, mostly because certain platforms don't properly support video chat in their APIs. If you want to have a video chat, you may want to sign onto the client through the old way, and run the chat from there. It will not be encrypted. 
 
 ### XMPP
 
+XMPP is am open-source messaging archiecture designed to be secure. Both Google Talk and WhatsApp started as forks of this platform, and to this day you can connect to talk with XMPP users through a Google Talk account. 
+
+To run XMPP, you will need a client (Pidgin and Adium will work). You will also need your own server, or somebody else's server to connect to. Remember that if you don't trust whoever is running your server, you aren't that far ahead of using one of the existing corporate services.
+
 ## 1.3 Secured Messaging Protocols
+
+Phones in particular do not have options like pidgin/adium, so here are some apps which will be alternative messaging options:
+
+### Threema (iOS, Android, Windows Phone)
+
+Threema is a secured messaging system which focuses on also granting anonyminity and runs a full stack in-house in Switzerland, a very free country by internet standards. You don't sign up with any personal information, and you can only add people by learning their IDs. You can download their app from the app store or [their website](https://threema.ch/en).
+
+### Wickr (iOS, Android, Windows/OSX/Linux Desktop)
+
+Wickr is a secured messaging protocol where messages disappear after a period, like Snapchat except with privacy. Also like Snapchat, it can occassionally be a little fussy until you get use to it. You can download it in the app stores or [on their website.](https://www.wickr.com/personal)
 
 ## 1.4: Encrypting Your Email
 
@@ -90,7 +114,7 @@ With a VPN, outside actors will still be able to see that you are sending data o
 
 This is why you want the other end of your VPN to come out in a place not controlled by whoever you are concerned is spying on you.
 
-To set up a VPN, you will need to get an endpoint (normally a rented machine in a data center) and to configure your computer so all traffic goes through that endpoint. We are working to figure out easy ways to make this technology accessible to less technical people. We reccomend [OpenVPN](https://openvpn.net/index.php/open-source/documentation/howto.html#quick). Other options are explained in [the AnonOps #OpNewBlood VPN tutorial](https://newblood.anonops.com/vpn.html), which is the best nontechnical VPN overview we have found. You may want to consider longer keys, since the tutorial may be out of date, and to do your own homework on what VPN provider you ultimately choose, since that website is accurate but a bit shady.
+To set up a VPN, you will need to get an endpoint (normally a rented machine in a data center) and to configure your computer so all traffic goes through that endpoint. We are working to figure out easy ways to make this technology accessible to less technical people. We reccomend [OpenVPN](https://openvpn.net/index.php/open-source/documentation/howto.html#quick). Other options are explained in [the AnonOps #OpNewBlood VPN tutorial](https://newblood.anonops.com/vpn.html), which is the best nontechnical VPN overview we have found. You may want to consider doing your own homework on what VPN provider you ultimately choose, since that website is accurate but a bit shady.
 
 Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
 
