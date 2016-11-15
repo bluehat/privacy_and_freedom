@@ -104,9 +104,13 @@ Wickr is a secured messaging protocol where messages disappear after a period, l
 
 ## 1.4: Encrypting Your Email
 
-# 2: Browsing Privacy
+# 2: Browsing Privacy 
 
-## HTTPS Everywhere
+## 2.0 What This Means
+
+A lot can be inferred about you by looking at what you look at online. Here are some ways to minimize that.
+
+## 2.1: HTTPS Everywhere (Firefox, Chrome, Android, Opera)
 
 The EFF has created [a plugin](https://www.eff.org/https-everywhere) which always forces you to use the more secure version of a website when available. This means that people in the middle will be able to infer the domain name you are looking at (like www.example.com) but your behavior inside the website will be hidden. 
 
