@@ -11,7 +11,7 @@ Calling this a rough draft would be generous. Help is appreciated, especially fr
  1. People who can make illustrations and diagrams to make complicated concepts simple
  1. People with teaching experience to help figure out how to break this into a course people can teach each other
 
-This guide will not make you safe. It will increase your chances of safety.
+This guide will not make you safe. It will increase your chances of remaining safe for longer.
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
 
@@ -46,7 +46,7 @@ This is why you need to worry about both security and authentication. The techno
 
 ### Expiration
 
-Over a long enough time, all crytography can be cracked. Your data can live on a disk as long time as computers improve. You should not keep logs you don't want found out, but if a government is logging you, they can use the logs from their servers. You'll need to remember that cryptography is not hiding what you are doing from the government forever. Instead it is delaying the government's capacity to read what you say and do for a certain number of years. This is why if freedom of speech/press is gone for too long of a time, technology will start enforcing its absence.
+Over a long enough time, all crytography can be cracked. Your data can live on a disk as long time as computers improve. You should not keep logs you don't want found out, but if a government is logging you, they can use the logs from their servers. You'll need to remember that cryptography is not hiding what you are doing from the government forever. Instead it is delaying the government's capacity to read what you say and do for a certain number of years. This is why if freedom of speech/press is gone for too long of a time, technology will begin enforcing its absence.
 
 ## 1.1: Signal / Securing your SMS
 
