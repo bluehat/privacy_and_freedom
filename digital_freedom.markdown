@@ -205,7 +205,7 @@ The bigger trick is making the pieces hard to find. Your can always take a nice 
 
 ## 5.4: Tails
 
-Tails is [live CD/USB software](https://tails.boum.org/) which has a lot of preconfigured privacy and encryption software. This means you'll set up a drive, reboot your computer to use that disk as a hard drive, and when it turns back on, your computer will be secured by default. 
+Tails is [live CD/USB software](https://tails.boum.org/) which has a lot of preconfigured privacy and encryption software. This means you'll set up a drive, reboot your computer to use that disk as a hard drive, and when it turns back on, your computer will be secured by default. Then, when you turn your computer off again and remove the drive, you can turn it back on again and access your files on your hard drive as normal.
 
 # 6: Legal 
 
