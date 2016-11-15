@@ -183,6 +183,8 @@ The data is kept on a circular object called a platter. If you open the case, it
 
 When you access a solid state hard drive's board, you will see a bunch of black computer chips which are likely symetrically mounted. Your data is in there. You can pry the chips off the board with a flathead screwdriver.
 
+//TODO picture of a SSD because this is confusing
+
 #### Destruction
 
 There are a variety of options out there, but you can always smash the storage portions stuff up until a paper shredder will finish your job for you. 
@@ -200,6 +202,10 @@ The bigger trick is making the pieces hard to find. Your can always take a nice 
 ## 5.2: Your IP Address
 
 ## 5.3: What Is a Clean Computer?
+
+## 5.4: Tails
+
+Tails is [live CD/USB software](https://tails.boum.org/) which has a lot of preconfigured privacy and encryption software. This means you'll set up a drive, reboot your computer to use that disk as a hard drive, and when it turns back on, your computer will be secured by default. 
 
 # 6: Legal 
 
