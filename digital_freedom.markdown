@@ -17,7 +17,7 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 # 1: Communication Privacy
 
-## 1.0: Security, Authentication, and Encryption
+## 1.0: Security, Authentication, Encryption, and Expiration
 
 ### Security
 Security means that your messages can't be understood by anybody except the party you are sending them to.
@@ -43,6 +43,10 @@ Your friend can't trust that courier. A bad person could catch the courier at a 
 This is why you need to worry about both security and authentication. The technology will make you secure, but you will always need to take precautions to make sure the person you think you are speaking with is the one you intended to speak with.
 
 **Short Version: Your private key is very secret: way more secret even than your social security number ought to be. Your public key is something you can tell to whoever you want, like a phone number. Don't trust keys if you aren't sure they belong to your friends**
+
+### Expiration
+
+Over a long enough time, all crytography can be cracked. Your data can live on a disk as long time as computers improve. You should not keep logs you don't want found out, but if a government is logging you, they can use the logs from their servers. You'll need to remember that cryptography is not hiding what you are doing from the government forever. Instead it is delaying the government's capacity to read what you say and do for a certain number of years. This is why if freedom of speech/press is gone for too long of a time, technology will start enforcing its absence.
 
 ## 1.1: Signal / Securing your SMS
 
