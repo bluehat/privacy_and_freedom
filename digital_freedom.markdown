@@ -136,7 +136,7 @@ To set up a VPN, you will need to get an endpoint (normally a rented machine in 
 
 Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
 
-## 2.3: Tor
+## 3.3: Tor
 
 # 4: Information Distribution, Verification, and Storage
 
