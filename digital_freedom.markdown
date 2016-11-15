@@ -1,7 +1,7 @@
 # A Citizen's Guide to Digital Freedoms
 
 # 0: Why
-We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling, and a [campaign advisor has already threatened a reporter](http://www.cnn.com/2016/11/13/politics/kellyanne-conway-harry-reid-lawsuit/). This seems like an excellent time for us to evaluate nontechnical education information on how technology can be used to protect citizen's civil liberties.
+We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling, and a [campaign advisor has already threatened a reporter](http://www.cnn.com/2016/11/13/politics/kellyanne-conway-harry-reid-lawsuit/). This seems like an excellent time for us to create nontechnical educational information on how technology can be used to protect citizen's civil liberties.
 
 The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. 
 
