@@ -13,7 +13,7 @@ Calling this a rough draft would be generous. Help is appreciated, especially fr
  1. People who can make illustrations and diagrams to make complicated concepts simple
  1. People with teaching experience to help figure out how to break this into a course people can teach each other
 
-This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, please skip to 3.0 for a discussion of your options before attempting to secure a Window 10 machine.**
+This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, please skip to 4.0 for a discussion of your options before attempting to secure a Window 10 machine.**
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
 
@@ -104,15 +104,21 @@ Wickr is a secured messaging protocol where messages disappear after a period, l
 
 ## 1.4: Encrypting Your Email
 
-# 2: Anti-Censorship
+# 2: Browsing Privacy
 
-## 2.0: Censorship Mechanics
+## HTTPS Everywhere
+
+The EFF has created [a plugin](https://www.eff.org/https-everywhere) which always forces you to use the more secure version of a website when available. This means that people in the middle will be able to infer the domain name you are looking at (like www.example.com) but your behavior inside the website will be hidden. 
+
+# 3: Anti-Censorship
+
+## 3.0: Censorship Mechanics
 
 Governments such as China outright block many websites outside their country. Governments like Pakistan are intercepting all outbound traffic before it leaves the country so they can watch it.
 
 These measures are meant to help you keep access to content which a dictatorship does not want you to see.
 
-## 2.1: VPNs 
+## 3.1: VPNs 
 
 A VPN, or Virtual Private Network, is essentially a computer based somewhere else. You make a secure tube from your internet to that other placem and look through it. You can use this computer to see whatever the internet looks like from the perspective of that computer. This means that if a website is blocked in your country, you can use a VPN to "get to the internet" in another country, and then see the website.
 
@@ -126,11 +132,11 @@ To set up a VPN, you will need to get an endpoint (normally a rented machine in 
 
 Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
 
-## 2.2: Tor
+## 2.3: Tor
 
-# 3: Information Distribution, Verification, and Storage
+# 4: Information Distribution, Verification, and Storage
 
-# 3.0: Distribution and Protection Needs
+# 4.0: Distribution and Protection Needs
 
 Government removal of information from the internet is becoming increasingly easy. The United States government already has the infrastructure and authority to [seize domain names](https://www.justice.gov/usao-sc/pr/federal-court-orders-seizure-67-website-domains-involved-smuggling-and-selling-misbranded), effectively removing sites from the interent. 
 
@@ -145,13 +151,13 @@ Once you have sensitive information, you need secure ways to store it.
 
 Linux is not made by a single company. It has a core, and a wide variety of distributions have been built on that. There are conflicting borderline religious opinions on what distribution is best. 
 
-## 3.1: Torrenting
+## 4.1: Torrenting
 
-## 3.2: Signatures and Checksums
+## 4.2: Signatures and Checksums
 
-## 3.3: Full Disk Encryption
+## 4.3: Full Disk Encryption
 
-## 3.4: Getting Rid of Data / Destroying a Hard Drive
+## 4.4: Getting Rid of Data / Destroying a Hard Drive
 
 This is probably not generally necessary, as you are unlikely to get federal agents interested enough in your computer to come put your hard drives back together, but the guide wouldn't really be complete without this.
 
@@ -181,35 +187,35 @@ There are a variety of options out there, but you can always smash the storage p
 
 The bigger trick is making the pieces hard to find. Your can always take a nice drive down the freeway and pour the little remaining fragments out a window.
 
-# 4: Anonymity
+# 5: Anonymity
 
-## 4.0: Need
+## 5.0: Need
 
-## 4.1: Remailers
+## 5.1: Remailers
 
-## 4.2: Your IP Address
+## 5.2: Your IP Address
 
-## 4.3: What Is a Clean Computer?
+## 5.3: What Is a Clean Computer?
 
-# 5: Legal 
+# 6: Legal 
 
-## 5.0 Description
+## 6.0 Description
 The primary author is not a lawyer, and none of the colaborators are known to be one either. This document is not legal advice. 
 
-## 5.1 No Fingerprint Readers to Unlock Things
+## 6.1 No Fingerprint Readers to Unlock Things
 
-# 6: Contributing to Internet Freedom
+# 7: Contributing to Internet Freedom (Mostly Nontechnical)
 
-## 6.0: Explanation
+## 7.0: Explanation
 
+Since many of these services are decentralized or crowdsourced, you can contribute by running a piece of the network.
 
-
-## 6.1: Running a Tor Exit Node
+## 7.1: Running a Tor Exit Node
 
 This is a huge service to the public, but **does sometimes expose you to harassment from the US federal government.** One of the greatest concerns about the security of Tor comes from the number of exit nodes which are controlled by the US government, so helping run more non-government nodes is a very big deal. Here is [Noisebridge's guide on responding to federal inqueries about their tor exit node](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI). 
 
 Please seriously consider [running a Tor exit node](https://blog.torproject.org/blog/tips-running-exit-node), particularly if you live in a country with stronger civil liberties. 
 
-## 6.2: Running a Bittorrent Mirror for Activist Information
+## 7.2: Running a Bittorrent Mirror for Activist Information
 
-## 6.3: Configuring Your Phone to Detect IMSI Catchers
+## 7.3: Configuring Your Phone to Detect IMSI Catchers
