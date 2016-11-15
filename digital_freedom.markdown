@@ -104,25 +104,15 @@ Wickr is a secured messaging protocol where messages disappear after a period, l
 
 ## 1.4: Encrypting Your Email
 
-# 2: Browsing Privacy 
+# 2: Anti-Censorship
 
-## 2.0 What This Means
-
-A lot can be inferred about you by looking at what you look at online. Here are some ways to minimize that.
-
-## 2.1: HTTPS Everywhere (Firefox, Chrome, Android, Opera)
-
-The EFF has created [a plugin](https://www.eff.org/https-everywhere) which always forces you to use the more secure version of a website when available. This means that people in the middle will be able to infer the domain name you are looking at (like www.example.com) but your behavior inside the website will be hidden. 
-
-# 3: Anti-Censorship
-
-## 3.0: Censorship Mechanics
+## 2.0: Censorship Mechanics
 
 Governments such as China outright block many websites outside their country. Governments like Pakistan are intercepting all outbound traffic before it leaves the country so they can watch it.
 
 These measures are meant to help you keep access to content which a dictatorship does not want you to see.
 
-## 3.1: VPNs 
+## 2.1: VPNs 
 
 A VPN, or Virtual Private Network, is essentially a computer based somewhere else. You make a secure tube from your internet to that other placem and look through it. You can use this computer to see whatever the internet looks like from the perspective of that computer. This means that if a website is blocked in your country, you can use a VPN to "get to the internet" in another country, and then see the website.
 
@@ -136,7 +126,17 @@ To set up a VPN, you will need to get an endpoint (normally a rented machine in 
 
 Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
 
-## 3.3: Tor
+## 2.3: Tor
+
+# 3: Browsing Privacy 
+
+## 3.0 What This Means
+
+A lot can be inferred about you by looking at what you look at online. All of the techniques in the anti-surveillance section help with this, but here are some ways to keep your browsing more private.
+
+## 3.1: HTTPS Everywhere (Firefox, Chrome, Android, Opera)
+
+The EFF has created [a plugin](https://www.eff.org/https-everywhere) which always forces you to use the more secure version of a website when available. This means that people in the middle will be able to infer the domain name you are looking at (like www.example.com) but your behavior inside the website will be hidden. 
 
 # 4: Information Distribution, Verification, and Storage
 
