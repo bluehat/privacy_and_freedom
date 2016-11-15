@@ -9,7 +9,7 @@ The goal of this guide is to create lesson plans which nontechnical people can t
 
 Calling this a rough draft would be generous. Help is appreciated, especially from: 
  1. More technical people to provide content.
- 1. Less technical people to explain what areas are not clear.
+ 1. Nontechnical people to explain what areas are not clear.
  1. People who can make illustrations and diagrams to make complicated concepts simple
  1. People with teaching experience to help figure out how to break this into a course people can teach each other
 
