@@ -2,20 +2,24 @@
 
 # 0: Background
 
-## 0.0: Why
+## 0.0: What and Why
 We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling, and a [campaign advisor has already threatened a reporter](http://www.cnn.com/2016/11/13/politics/kellyanne-conway-harry-reid-lawsuit/). This seems like an excellent time for us to create nontechnical educational information on how technology can be used to protect citizen's civil liberties.
 
-The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. 
+The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, or a Lenovo laptop, please skip to 4.0 for a discussion of your options before attempting to secure a Window 10 machine.**
+
+## 0.1 Help Needed
 
 Calling this a rough draft would be generous. Help is appreciated, especially from: 
  1. More technical people to provide content.
  1. Nontechnical people to explain what areas are not clear.
  1. People who can make illustrations and diagrams to make complicated concepts simple
  1. People with teaching experience to help figure out how to break this into a course people can teach each other
+ 
+## 0.2 Ownership and Distribution
 
-This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, please skip to 4.0 for a discussion of your options before attempting to secure a Window 10 machine.**
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate). All Amazon links include the EFF referral tag, so they get money.
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
+This information is kept in git format because it is easy to transmit git repos peer-to-peer. You are encouraged to download a copy. Suggestions on how to keep the guide trustworthy and from having merge issues in a peer-to-peer environment are appreciated. 
 
 ## 0.1: Security, Authentication, Encryption, and Expiration
 
@@ -151,9 +155,23 @@ Unfortunately, knowing if you can trust a file you download is a problem we have
 Once you have sensitive information, you need secure ways to store it.
 
 ### Known Compromised Systems
+
+#### Windows 10
 [Windows 10's EULA stipulates that everything you do on your computer will be logged by Microsoft, and that these logs will be available to the government.](http://www.newsweek.com/windows-10-recording-users-every-move-358952) This is why there will be a lesson in installing an option other than Windows called Linux.
 
 Linux is not made by a single company. It has a core, and a wide variety of distributions have been built on that. There are conflicting borderline religious opinions on what distribution is best. 
+
+#### Lenovo Laptops
+
+Lenovo laptops have a [history of manufacturer-bundled malware](http://www.theregister.co.uk/2015/08/12/lenovo_firmware_nasty/) which opens a security vulnerability on the system if the system boots Windows. The code is injected before Windows launches. It is considered a backdoor on the system and it is baked into the physical boards they ship you. This practice has gone on for multiple years, and has caused some [US federal government branches to try to not use the systems anymore](http://www.wsj.com/articles/u-s-navy-looks-to-replace-ibm-servers-for-security-after-lenovo-purchase-1432047582). [Obama has required that several federal agencies get approval for any systems they purchase if the systems are made in China](http://www.reuters.com/article/us-usa-cybersecurity-espionage-idUSBRE92Q18O20130328), supposedly for this reason. 
+
+#### Cell Phone USB Charger Rooting Issues
+
+USB, the protocol by which most cell phones charge, has a strict master/slave protocol. That means that one end of the protocol has nearly complete control over the other. In the case of phones that use USB, your phone is always the slave. This means that anything you plug your phone into to charge can install malware on your phone if it has a computer chip in it and somebody can access that chip to put malware on it. [This includes iPhones](http://www.extremetech.com/extreme/157207-black-hat-hackers-break-into-any-iphone-in-under-a-minute-using-a-malicious-charger) even though the end of the USB cord looks different. Look out for USB chargers in airplanes, since their security in particular is extremely questionable and jerks have literally hours where they often have nothing better to do than root a whole planeful.
+
+Since asking you to never charge your phone from anything with a chip ever again is a lot, you are advised to either [purchase](https://www.amazon.com/s/field-keywords=usb+data+block&tag=electronicfro-20) or [cut up an existing wire to make](http://www.instructables.com/id/How-to-make-a-USB-no-data-charger-cable/) a data block USB cable. They are casually known as USB condoms. This is a USB charger where the power lines connect to the device, but the data transmission lines are set up to not connect. 
+
+If you want to transfer information from your computer to your phone, you will need another cable with the data lines intact.
 
 ## 4.1: Torrenting
 
@@ -179,7 +197,7 @@ Physically destroying the drives is a good option, and in most cases just smashi
 
 The data is kept on a circular object called a platter. If you open the case, it is the large circular thing. Remove it (you can smash it to make it easier to remove, but that won't do it on its own). Watch out for the magnets, which are strong enough to break fingers if they become dislodged and rush together with you in the middle. Make sure you leave nothing connected to the center, as your data takes up extremely small amounts of space.
 
-#### SSD: Solid State Drive (New Kind)
+#### SSD: Solid State Drive (New Kind. Sometimes in desktops, almost always in laptops)
 
 When you access a solid state hard drive's board, you will see a bunch of black computer chips which are likely symetrically mounted. Your data is in there. You can pry the chips off the board with a flathead screwdriver.
 
@@ -226,6 +244,8 @@ This is a huge service to the public, but **does sometimes expose you to harassm
 
 Please seriously consider [running a Tor exit node](https://blog.torproject.org/blog/tips-running-exit-node), particularly if you live in a country with stronger civil liberties. 
 
-## 7.2: Running a Bittorrent Mirror for Activist Information
+## 7.2: Downloading and Storing Activist Information for Offline Distribution
 
-## 7.3: Configuring Your Phone to Detect IMSI Catchers
+## 7.3: Running a Bittorrent Mirror for Activist Information
+
+## 7.4: Configuring Your Phone to Detect IMSI Catchers
