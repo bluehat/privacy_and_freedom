@@ -5,7 +5,7 @@
 ## 0.0: What and Why
 We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling, and a [campaign advisor has already threatened a reporter](http://www.cnn.com/2016/11/13/politics/kellyanne-conway-harry-reid-lawsuit/). This seems like an excellent time for us to create nontechnical educational information on how technology can be used to protect citizen's civil liberties.
 
-The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, or a Lenovo laptop, please skip to 4.0 for a discussion of your options before attempting to secure a Window 10 machine.**
+The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, or a Lenovo laptop, please skip to 4.0 for a discussion of your options before attempting to secure these machines.**
 
 ## 0.1 Help Needed
 
