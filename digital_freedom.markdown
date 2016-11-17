@@ -21,7 +21,7 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 This information is kept in git format because it is easy to transmit git repos peer-to-peer. You are encouraged to download a copy. Suggestions on how to keep the guide trustworthy and from having merge issues in a peer-to-peer environment are appreciated. 
 
-## 0.1: Security, Authentication, Encryption, and Expiration
+## 0.3: Security, Authentication, Encryption, and Expiration
 
 ### Security
 Security means that your messages can't be understood by anybody except the party you are sending them to.
