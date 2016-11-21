@@ -211,7 +211,7 @@ There are a variety of options out there, but you can always smash the storage p
 
 The bigger trick is making the pieces hard to find. Your can always take a nice drive down the freeway and pour the little remaining fragments out a window.
 
-# 5: Anonymity
+# 5: Internet Anonymity
 
 ## 5.0: Need
 
@@ -225,27 +225,43 @@ The bigger trick is making the pieces hard to find. Your can always take a nice 
 
 Tails is [live CD/USB software](https://tails.boum.org/) which has a lot of preconfigured privacy and encryption software. This means you'll set up a drive, reboot your computer to use that disk as a hard drive, and when it turns back on, your computer will be secured by default. Then, when you turn your computer off again and remove the drive, you can turn it back on again and access your files on your hard drive as normal.
 
-# 6: Legal 
+# 6: Anonyminity for in Person Work
 
-## 6.0 Description
+## Facial Recognition Software
+
+## IMSI Catchers
+
+When your phone connects to a tower, the tower knows which phone it is. Police forces now have fake towers which will record all phones which connect to them. This can be used to de-anonymize protestors. 
+
+The best defense (inconvenient as it is) is to have a cheap burner phone which you only use for political action. Android phones are available for ~$60 now.
+
+## Filming Police Conduct
+
+While a few areas have made this legally difficult (and you should check) the [ACLU has provided software which will automatically upload any video you take and send it to your local ACLU chapter.](https://www.aclu.org/feature/aclu-apps-record-police-conduct)
+
+It is advised that you use an auto-uploading app of some type, as police often confiscate phones with incriminating evidence on them.
+
+# 7: Legal 
+
+## 7.0 Description
 The primary author is not a lawyer, and none of the colaborators are known to be one either. This document is not legal advice. 
 
-## 6.1 No Fingerprint Readers to Unlock Things
+## 7.1 No Fingerprint Readers to Unlock Things
 
-# 7: Contributing to Internet Freedom (Mostly Nontechnical)
+# 8: Contributing to Internet Freedom (Mostly Nontechnical)
 
-## 7.0: Explanation
+## 8.0: Explanation
 
 Since many of these services are decentralized or crowdsourced, you can contribute by running a piece of the network.
 
-## 7.1: Running a Tor Exit Node
+## 8.1: Running a Tor Exit Node
 
 This is a huge service to the public, but **does sometimes expose you to harassment from the US federal government.** One of the greatest concerns about the security of Tor comes from the number of exit nodes which are controlled by the US government, so helping run more non-government nodes is a very big deal. Here is [Noisebridge's guide on responding to federal inqueries about their tor exit node](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI). 
 
 Please seriously consider [running a Tor exit node](https://blog.torproject.org/blog/tips-running-exit-node), particularly if you live in a country with stronger civil liberties. 
 
-## 7.2: Downloading and Storing Activist Information for Offline Distribution
+## 8.2: Downloading and Storing Activist Information for Offline Distribution
 
-## 7.3: Running a Bittorrent Mirror for Activist Information
+## 8.3: Running a Bittorrent Mirror for Activist Information
 
-## 7.4: Configuring Your Phone to Detect IMSI Catchers
+## 8.4: Configuring Your Phone to Detect IMSI Catchers
