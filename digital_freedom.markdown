@@ -9,7 +9,7 @@ The goal of this guide is to create lesson plans which nontechnical people can t
 
 ## 0.1 Help Needed
 
-Calling this a rough draft would be generous. Help is appreciated, especially from: 
+Calling this a rough draft would be generous. Help is appreciated, especially from:
  1. More technical people to provide content.
  1. Nontechnical people to explain what areas are not clear.
  1. People who can make illustrations and diagrams to make complicated concepts simple
@@ -21,15 +21,18 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 This information is kept in git format because it is easy to transmit git repos peer-to-peer. You are encouraged to download a copy. Suggestions on how to keep the guide trustworthy and from having merge issues in a peer-to-peer environment are appreciated. 
 
-## 0.3: Security, Authentication, Encryption, and Expiration
+## 0.3: Communications: Security, Authentication, Encryption, and Expiration
 
 ### Security
-Security means that your messages can't be understood by anybody except the party you are sending them to.
+In communication, security means that your messages can't be understood by anybody except the party you are sending them to.
+In storage or on devices, security means that only those intended access to the ddata or device has that access.
 
 ### Authentication
 Authentication means the person who is getting your messages is the person you want to have your messages. Most security technology will successfully auto-establish a secure connection on its own, but you need to take extra precautions to make sure you are talking to the correct person on the secure channel.
 
-### Communication Encryption
+### Encryption
+Is a method of accomplishing communication security
+
 We are working with public key cryptopgraphy. Public key cryptography is like an old-time wax seal people used to seal letters, except it actually works.
 
 To keep it simple: you have two things called keys, but which are actually large (hundred+ digit) numbers. One is called your public key, and one is callled your private key. 
@@ -118,9 +121,9 @@ These measures are meant to help you keep access to content which a dictatorship
 
 ## 2.1: VPNs 
 
-A VPN, or Virtual Private Network, is essentially a computer based somewhere else. You make a secure tube from your internet to that other placem and look through it. You can use this computer to see whatever the internet looks like from the perspective of that computer. This means that if a website is blocked in your country, you can use a VPN to "get to the internet" in another country, and then see the website.
+A VPN, or Virtual Private Network, is essentially a computer based somewhere else and a secure tube to it. All communications from your computer flow over this tube, and out the other computer, as if your computer were where the VPN computer is. You can use this remote computer's view to see whatever the internet looks like from the perspective of that computer. This means that if a website is blocked in your country, you can use a VPN to "get to the internet" in another country, and then see the website.
 
-They are commonly used now to get around traffic shaping measures by your ISP (Internet Service Provider: aka Comcast etc). ISPs illegally throttle services like Netflix all the time, so opening a VPN to a colo means that they can't really traffic shape your encrypted data, they can only turn the speed up and down monolithically. VPNs are also used to make working on unsecured coffee shop wifi reasonable, and can be used to sidestep snooping by non-government actors, such as your school or workplace.
+They are commonly used now to get around traffic shaping measures by your ISP (Internet Service Provider: aka Comcast etc). ISPs illegally (under net neutrality) throttle services like Netflix all the time. If you're using a VPN though, the tube traffic is flowing over a secure tube first, to another computer. Since the tube is secure (encrypted), the ISP can't *tell* what type of traffic it is. So, opening a VPN to a colo means that they can't really traffic shape your internt traffic, they can only turn the speed up and down monolithically, impacting all traffic in the VPN. VPNs are also used to make working on unsecured coffee shop wifi reasonable, and can be used to sidestep snooping by non-government actors, such as your school or workplace.
 
 With a VPN, outside actors will still be able to see that you are sending data out of the country if they are watching the VPN. They will be able to tell who you are unless you somehow make it incredibly difficult for them to tell what computer is connecting to the VPN. If the VPN is compromised, outside actors will be able to see what you look at, and possibly change what you are looking at.
 
@@ -130,17 +133,60 @@ To set up a VPN, you will need to get an endpoint (normally a rented machine in 
 
 Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
 
-## 2.3: Tor
+## 2.3: TOR
+
+TOR stands for "The Onion Router". [TOR]( https://www.torproject.org/) is software and accompanying network used to help acheive anonymity on the internet, most often used for webbrowsing.
+
+The Weakness of a VPN, as noted above, is that the VPN provider knows exactly who you are, and can look at your traffic. TOR attempts to fix this flaw.
+
+Imagine you use one VPN. Then, set up a VPN to another machine, and another.  When your traffic leaves your machine it's wrapped in 3 layers of encryption.  The first machine strips away 1 layer, leaving 2 more. second VPN another layer, and the third VPN yet another finally sending your traffic out on to the open internet. This is essentially how TOR works.
+
+The idea is that the VPN machine knows who you are, but can't see your traffic. The last can see your traffic, but only knows the machine it's talking to, not who you are.  
+
+### TOR browser
+The easiest solution for using tor is probably to install the [TOR browser](https://www.torproject.org/projects/torbrowser.html.en).
+
+### Known security problems
+
+Government agencies are able to track down TOR communications, and have staged several [major crackdowns on illegal activity using TOR](https://www.wired.com/2014/11/operation-onymous-dark-web-arrests/). It is widely believed that the U.S. NSA is running a large portion of the nodes. TOR depends on that first and last machine not colluding, if both are machines run by the same people you lose.
 
 # 3: Browsing Privacy 
 
-## 3.0 What This Means
+## 3.0: What This Means
 
 A lot can be inferred about you by looking at what you look at online. All of the techniques in the anti-surveillance section help with this, but here are some ways to keep your browsing more private.
 
-## 3.1: HTTPS Everywhere (Firefox, Chrome, Android, Opera)
+## 3.1: DNS privacy leak
+Domain name service.
+
+The internet works based in IP addresses. When you visite a website like "www.google.com", your computer has to look up what IP to send traffic to to reach "www.google.com". To do this it uses DNS. Usually your machine asks the nearest router the question, if it doesn't know it passes the question on up the hierarchy, and eventually when someone has the answer they respond, that DNS server responds in kind, etc. until the nearest router tells your machine the answer.
+
+This is important because DNS is not encrypted or authenticated. This means every DNS server on that chain
+ 1. Could lie to your computer and send it somewhere else
+ 1. Knows that you wanted to visit "www.google.com"
+
+Note that even if you use HTTPS (discussed below) DNS is still leaking *what* website you are visiting. Same is true if you are using a VPN or TOR, as by default DNS will still flow directly out your computer, instead of over the encrypted link.
+
+Solutions: If you are using a VPN, or TOR and do not want your traffic being seen on your local network or ISP (or the government agency monitoring your ISP), you'll need take extra steps.
+
+// TODO: Add DNS proxy information here
+
+## 3.2: HTTPS
+
+HTTPS is encryption and authentication of traffic between your machine and a website. HTTPS is the reason that it's reasonable to use your bank's website, and expect that your internet provider (or local coffee shop) can't see your password
+
+### HTTPS Everywhere (Firefox, Chrome, Android, Opera)
 
 The EFF has created [a plugin](https://www.eff.org/https-everywhere) which always forces you to use the more secure version of a website when available. This means that people in the middle will be able to infer the domain name you are looking at (like www.example.com) but your behavior inside the website will be hidden. 
+
+### Known security flaws
+HTTPS authentication comes with some caveats. 
+
+The basis for HTTPs authentication is trusting a few hundred corporations around the world. Authentication information for these companies is built in to your browser.
+
+Each of these companies holds a "root" cert, which can sign other certs. By signing a websites http cert the root authority is saying "I say this company is who they say they are". A lot of these companies are not actually trustworthy, and many of these companies are closely tied to governments.
+
+If an attacker redirected all traffic everywhere, they'd likely get caught, so these attacks are usually local... such as via [hotel wifi](http://www.zdnet.com/article/hackers-are-using-hotel-wi-fi-to-spy-on-guests-steal-data/). Thus, VPN will often work around it.z
 
 # 4: Information Distribution, Verification, and Storage
 
@@ -169,15 +215,65 @@ Lenovo laptops have a [history of manufacturer-bundled malware](http://www.there
 
 USB, the protocol by which most cell phones charge, has a strict master/slave protocol. That means that one end of the protocol has nearly complete control over the other. In the case of phones that use USB, your phone is always the slave. This means that anything you plug your phone into to charge can install malware on your phone if it has a computer chip in it and somebody can access that chip to put malware on it. [This includes iPhones](http://www.extremetech.com/extreme/157207-black-hat-hackers-break-into-any-iphone-in-under-a-minute-using-a-malicious-charger) even though the end of the USB cord looks different. Look out for USB chargers in airplanes, since their security in particular is extremely questionable and jerks have literally hours where they often have nothing better to do than root a whole planeful.
 
-Since asking you to never charge your phone from anything with a chip ever again is a lot, you are advised to either [purchase](https://www.amazon.com/s/field-keywords=usb+data+block&tag=electronicfro-20) or [cut up an existing wire to make](http://www.instructables.com/id/How-to-make-a-USB-no-data-charger-cable/) a data block USB cable. They are casually known as USB condoms. This is a USB charger where the power lines connect to the device, but the data transmission lines are set up to not connect. 
+Since asking you to never charge your phone from anything with a chip ever again is a lot, you are advised to either [purchase](https://www.amazon.com/s/field-keywords=usb+data+block&tag=electronicfro-20) or [cut up an existing wire to make](http://www.instructables.com/id/How-to-make-a-USB-no-data-charger-cable/) a data block USB cable. They are casually known as USB condoms. This is a USB charger where the power lines connect to the device, but the data transmission lines are set up to not connect.
 
 If you want to transfer information from your computer to your phone, you will need another cable with the data lines intact.
+
+#### Cellphones and U.S. 911 support
+
+All cellphones sold in the U.S. are required by law to have 911 support. Ostensibly this is a suite of features allowing a caller to call 911 on any phone without unlocking the phone, having a cell plan, etc. and allows the 911 operator to locate the phone when such a call is made. Most phones sold outside the U.S. are still legal for sale here, and thus still include this feature.
+
+The features that allows this though also allow the phone company to physically locate most phones, not only during a 911 call, but any time the phone is on. This information is usually logged, and is usually available to government agencies upon request, often without a warrent.
+
+#### Cellphones and other security hacks
+
+Through a host of security flaws intelligence agencies such as the NSA have the ability to remotely modify the software of most cellphones on the market. It's complex, and also largely unknown *which* models require which types of access, but it should be assumed they can do this fairly easilly to any model phone. This tech seems to be getting deployed at protests (often via cell-site simulators) as well as being used in more clandestine operations.
+
+Once modified the agency [gains remote access to all features of the phone](http://money.cnn.com/2014/06/06/technology/security/nsa-turn-on-phone/index.html)
+. Examples:
+ 1. The phone can "pretend" to turn off (unless you remove your  battery). Thus continuing to track movements via 911 support or whatever else.
+ 1. The agency can listen to the microphone or take pictures with the camera.
+ 1. The agency can "keylog" meaning intercept your messages as you type them, thus defeating encryption technologies such as Signal.
+
+Solutions: Remove the battery from your phone, leave it at home, and/or use a burner phone so it's harder to target you.
+
+## Cellphones and GPS technologies
+Traditional GPS technologies are one-directional (GPS, and Galileo from the U.S. and GlONASS from Russia). The reciever (e.g. your phone) is passive and never sends a signal back to the satteliate. Thus, you can use GPS without giving up your position. This is not true of the latest GPS system out of the Chinese corporation Baidou. This system is bi-directional, and can be used by the Chinese government track your position.
+
+It is believed that Baidou enabled GPS chips add a security flaw similar to U.S. 911 support, the extent is unknown, but that they return the users position to the sattelite is highly probable.
+
+Many new phone GPS chips have the new Baidou GPS feature.
+
+#### Cellphones and Fishing apps
+
+Many apps are being written and released by attackers as a method of controlling your phone, without using more advanced techniques. See Cellphones and other security hacks for what this would likely allow the attacker to do.
+
+Solutions: Minimize the apps on your phone, and do not install apps from random sources. This type of attack is likely to be a "fish" attack, meaning someone convinces you to install an app using an email or similar. Don't fall for it.
+
+#### Wifi routers
+
+Wifi router software is usually written poorly and quickly by amateur programmers. Government agencies and other hackers alike are now targetting wifi routers as they are so easy.
+
+Solutions: Higher quality routers are harder targets for hackers, such as Google's product. Unless you are technical enough to be fairly sure it may be a good idea to treat any router much like hotel wifi.
 
 ## 4.1: Torrenting
 
 ## 4.2: Signatures and Checksums
 
 ## 4.3: Full Disk Encryption
+
+Full disk encryption is exactly what it sounds like. To boot the machine you type a password which is stored in memory, and used to decrypt the data as it's accessed. This is useful if your security concerns include direct physical access to your
+
+Under Linux most major distros now have an option to enable this during install.
+
+Note that full disk encryption can save a lot of concern if a machine is physically lost, or fails in a way that makes deleting the data on the harddrive difficult.
+
+### Weaknesses
+Note that, there are still ways for someone with access to your machine may be able to get your data.
+
+ 1. Bus mastered protocols (firewire): If your machine is left on (sleeping usually suffices), an attacker with physical access can plug a device in to a bus-mastered the port. Older USB specs are not sufficient. This attack has been demonstrated with firewire, and it is likely that USB-C and Thunderbolt have the same flaw (since they seem to support bus-mastering). Since the key is stored in memory they can access it directly, or ask the system to decrypt the data for them and stream it to the newly plugged in device... accessing your data despite the encryption.
+
+ 1. 2 physical accesses: An attacker can remove the storage device and edit the bootloader to record the key in plaintext on the boot partition next time you start your machine. They then put the device back in to your machine. Next time they get access to your machine the key is right there, and they can access everything.
 
 ## 4.4: Getting Rid of Data / Destroying a Hard Drive
 
@@ -193,13 +289,18 @@ Even after you overwrite the data the first time, people with large amounts of r
 
 Physically destroying the drives is a good option, and in most cases just smashing the part which store the data is enough. However, if you have [really attracted some attention to yourself](http://www.popularmechanics.com/technology/security/how-to/a8566/how-to-read-a-smashed-hard-drive-14877558/), you should know that the relevant pieces of data can be stored on extremely small pieces of the drive, so it can be difficult to make sure you have properly destroyed the drive. There are two kinds of hard drives, and each have different relevant parts to destroy.
 
+Corporations with serious data security concerns go through a fairly specific process. Best practice today is:
+ 1. Have the drive encrypted in the first place, just in case it goes missing.
+ 1. "Degause" the drive. This means to run very strong magnets over it over and over, flipping the field back and forth. This is similar (but much faster) than writing lots of random data over it repeatedly.
+ 1. Powder the drive. Meaning to literally grind the drive in to dust.
+
 #### HDD: Hybrid Hard Drive (Old Kind)
 
 The data is kept on a circular object called a platter. If you open the case, it is the large circular thing. Remove it (you can smash it to make it easier to remove, but that won't do it on its own). Watch out for the magnets, which are strong enough to break fingers if they become dislodged and rush together with you in the middle. Make sure you leave nothing connected to the center, as your data takes up extremely small amounts of space.
 
 #### SSD: Solid State Drive (New Kind. Sometimes in desktops, almost always in laptops)
 
-When you access a solid state hard drive's board, you will see a bunch of black computer chips which are likely symetrically mounted. Your data is in there. You can pry the chips off the board with a flathead screwdriver.
+When you access a solid state hard drive's board, you will see a bunch of black computer chips which are likely symetrically mounted. Your data is stored in those chips. You can pry the chips off the board with a flathead screwdriver. Idealy you then smash these chips as well.
 
 //TODO picture of a SSD because this is confusing
 
@@ -241,12 +342,29 @@ While a few areas have made this legally difficult (and you should check) the [A
 
 It is advised that you use an auto-uploading app of some type, as police often confiscate phones with incriminating evidence on them.
 
-# 7: Legal 
+## Cellphones
+Can give up your position, as well as record other information about you, even while appearing to be turned off.
+
+See cellphone sections under "Known Compromised Systems"
+
+# 7: Legal
 
 ## 7.0 Description
 The primary author is not a lawyer, and none of the colaborators are known to be one either. This document is not legal advice. 
 
 ## 7.1 No Fingerprint Readers to Unlock Things
+
+## 7.2 U.S. Customs and border patrol
+When passing through U.S. customs it's probably smart to assume all your devices may be siezed and searched.
+
+Customs claims that since they can search your luggage, they can also search your devices. They extend this to include data stored in the cloud which your device has access to. 
+
+Though it's not commonly done, they can and do take devices and image them, or they can hold you indefinitely until you agree to unlock a device so they can access the data.
+
+For this reason burner phones and the like may be your best bet when crossing the U.S. border.
+
+## 7.3 Passwords not necessarilly protected by U.S. 5'th ammendment
+It's currently unclear whether giving up a password is protected by 5'th ammendment rights. There is at least one case where someone has been put in jail for over 2 years (as of now) for not giving up a password to data encrypted on his computer's harddrive (believed to be child pornography in this case).
 
 # 8: Contributing to Internet Freedom (Mostly Nontechnical)
 
