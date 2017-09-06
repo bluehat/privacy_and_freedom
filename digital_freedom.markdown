@@ -1,70 +1,237 @@
 # A Citizen's Guide to Digital Freedoms
 
-# 0: Background
+# Background
 
-## 0.0: What and Why
-We're about to hand the architecture for a surveillance police state over to new leadership. Some of Trump's language around free speech and free press has been troubling, and a [campaign advisor has already threatened a reporter](http://www.cnn.com/2016/11/13/politics/kellyanne-conway-harry-reid-lawsuit/). This seems like an excellent time for us to create nontechnical educational information on how technology can be used to protect citizen's civil liberties.
+## What and Why
+The goal of this guide is to help technical and non-technical people alike,
+particularly political and social activists, keep their information and
+communications confidential.
 
-The goal of this guide is to create lesson plans which nontechnical people can then use to run classes for groups of nontechnical people. This guide will not make you safe. It will increase your chances of remaining safe for longer. **If you are running Windows 10, or a Lenovo laptop, please skip to 4.0 for a discussion of your options before attempting to secure these machines.**
+## Help Needed
 
-## 0.1 Help Needed
+1. Technical people: We welcome contributions, additions and corrections.
+1. Non-technical people: Information about what areas are unclear or in need of
+   improvement is hugely valuable.
 
-Calling this a rough draft would be generous. Help is appreciated, especially from:
- 1. More technical people to provide content.
- 1. Nontechnical people to explain what areas are not clear.
- 1. People who can make illustrations and diagrams to make complicated concepts simple
- 1. People with teaching experience to help figure out how to break this into a course people can teach each other
- 
-## 0.2 Ownership and Distribution
+Non-technical people: To contribute you can simply comment on github.
+
+Technical people: First "clone" the repository on github, modify it as desired and then comment
+with a "pull" request. Sadly, gist lacks an explicit "pull request" feature,
+this is the closest we can get.
+
+## Ownership and Distribution
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate). All Amazon links include the EFF referral tag, so they get money.
 
 This information is kept in git format because it is easy to transmit git repos peer-to-peer. You are encouraged to download a copy. Suggestions on how to keep the guide trustworthy and from having merge issues in a peer-to-peer environment are appreciated. 
 
-## 0.3: Communications: Security, Authentication, Encryption, and Expiration
+# Terminology
+## Security
+Security is a very nebulous term, including concepts like financial security, so
+for our purposes we're going to stick to 2 particular types of security.
 
-### Security
-In communication, security means that your messages can't be understood by anybody except the party you are sending them to.
-In storage or on devices, security means that only those intended access to the ddata or device has that access.
+1. Device Security: The inability for anyone to use or modify the software on a device you own, without your authorization.
+1. Communication security: The security of your communications with another person, to clarify what that means we break that down further below.
 
-### Authentication
-Authentication means the person who is getting your messages is the person you want to have your messages. Most security technology will successfully auto-establish a secure connection on its own, but you need to take extra precautions to make sure you are talking to the correct person on the secure channel.
+It's tempting to call things "secure" or "insecure" and you hear these terms used all the time by media and even by techies. Don't listen to it. In reality security is *always* a gradiant. Something with all the best technology done the best way anyone knows may have a tiny flaw that no-one noticed.
 
-### Encryption
-Is a method of accomplishing communication security
+A burgler breaks in to a house via the easiest method. A lock on the window doesn't help if the door is literally left wide open. Alternatively, A solid steel door with a fancy lock doesn't help if it's next to a glass window trivially broken. Similarly we measure a technology's security by it's *weakest* point, not it's
+strongest.
 
-We are working with public key cryptopgraphy. Public key cryptography is like an old-time wax seal people used to seal letters, except it actually works.
+Continuing the analogy most burglers don't come with ladders. There may be a use in using a steel door, even if the upper story windows are unlocked. For this reason we can't just talk about security as a single slider. It depends on who you are trying to keep things secure *from*.
 
-To keep it simple: you have two things called keys, but which are actually large (hundred+ digit) numbers. One is called your public key, and one is callled your private key. 
+This is all important because it's tempting to say "Ugh, everything is insecure". While that's true in a sense, we still lock our doors even though a burgler could use a wrecking ball. Even when we're talking about governments, dramatic measures get expensive, and often give away information a government doesn't want people to know (like that they just smashed up your house).  
 
-Your private key is like the stamp which makes your wax seal: it is used to sign documents. If anybody ever steals your private key that is very bad. **You must protect your private key.**
+Unfortunately, all this means we can't just say "Do this, it's secure", "don't do this, it's not secure". We have to explain the tradeoffs. So, while we try and keep the explanations as simple as possible, we try and do so without washing out these important details.
 
-Your public key is like the address of a secured mailbox.
+## Communication Security
+Communication security is made up of 3 components.
 
-The keys are inherrently linked. They are set up so that your private key (thing which makes your wax seals) is the only thing which can open your mailbox, and your public key (the address of your mailbox) can be used to verify the authenticity of the wax seal on your letters.
+1. Encryption: The inability for someone besides the person you are communicating with who sees your communocation to understand it.
+1. Authentication: The assurance that you are communicationg with the person you think you are.
+1. Anonymity: The assurance that no-one can tell who you are, or who you are talking to.
 
-The one thing the math can not solve is making sure you do the setup work with the right person. Imagine you and your friend have never sent messeges each way before. The first thing you'd have to do is tell your friend where your mailbox is and show them how to verify your wax seal's authenticity. If you do this over the internet, you're basically sending a courier nobody's met before who is just going to show up and claim to be working for you. 
+It should be noted that the 3'rd bullet here, though highly desirable, is rarely acheivable, so in regular conversation the combination of 1 and 2 are usually considered "sufficient". For this document we'll try and spell out exactly what we mean rather than just calling something "secure" overall.
 
-Your friend can't trust that courier. A bad person could catch the courier at a crossroads and start impersonating them. This would let them give your friend the address of a mailbox that they claim belongs to you, but really belongs to the bad guy. If they did this to both of you all the messages on both sides would be delivered instead to the bad person. If the bad person was diligent about forwarding the messages with their setup, you and your friend would never know there was somebody in the middle watching everything you do. This is why mailbox address / public key exchanges are normally done in person, or by a method which is built off a network of people verifying keys in person. In the security community, they are often added to people's business cards and twitter profiles.
+## Encryption
+We should talk about encryption in a little more detail. 
 
-This is why you need to worry about both security and authentication. The technology will make you secure, but you will always need to take precautions to make sure the person you think you are speaking with is the one you intended to speak with.
+Not all encryption is created equal and just because something is "encrypted"
+doesn't mean it can never be read by anyone. As a simple example, if I use
+"rot13" to encrypted my email... that is I take ever letter and change it to the
+letter 13 letters further through the alphabet (wrapping around if I run out of
+letters)... while technically encryption, many children could "crack" this and
+read the original message.
 
-**Short Version: Your private key is very secret: way more secret even than your social security number ought to be. Your public key is something you can tell to whoever you want, like a phone number. Don't trust keys if you aren't sure they belong to your friends**
+In practice encryption methods suffer from 2 classes of problem
+1. All can be "cracked" (read by someone besides the person who you intend to read it) with sufficient computational power. As computers get faster, that computational power gets easier to get a hold of. While some encryption may take an amount of computational power functionall impossible to get, most do not, and many older technologies can already be cracked by say... China if they care enough to spend a couple billion on cracking it (say, with 2 days time on their biggest computer).
+1. Most encryption technologies don't have any strong theoretical backing. It's often the case that mathematical tricks can significantly reduce the computational power needed. As new computational tricks are discovered
 
-### Expiration
+Why are we bringing this up? Because, it's important to realize that no matter what you do, if your conversation is "logged" (stored somewhere) by someone, even if it's encrypted so they can't read it now, some day they may be able to read it. The cost to do so will also constantly drop as computers get faster.
 
-Over a long enough time, all crytography can be cracked. Your data can live on a disk as long time as computers improve. You should not keep logs you don't want found out, and you should use services which don't log whenever possible, but if a government is logging you, they can use the logs from their servers. You'll need to remember that cryptography is not hiding what you are doing from the government forever. Instead it is delaying the government's capacity to read what you say and do for a certain number of years. This is why if freedom of speech/press is gone for too long of a time, technology will begin enforcing its absence.
+We'll try and address how *good* a technology's encryption is. Good generally means "probably won't be easy to read within your lifetime".
 
-# 1: Communication Privacy
+## Logging
+Logging technical terminology for the simple act of storing information. Almost every system in the technical world is constantly logging. It's pretty obvious why you might care about logging if you are worried about confidental information and communications. So, here are a few things that are logged, for you to keep in mind: 
 
-## 1.0: What is this and why?
+Here's some you probably know about
+1. The location of all cell phones in the U.S.
+1. [The calling and called phone numbers of every phone call made in the U.S.](https://www.theguardian.com/business/2016/oct/25/att-secretly-sells-customer-data-law-enforcement-hemisphere).
+1. Most websites log the "internet address" of every machine that accesses them. They also usually log all major or interesting operations.
 
-The government, by default, collects a lot of information about you. Much of this is done through the [phone companies](https://www.theguardian.com/business/2016/oct/25/att-secretly-sells-customer-data-law-enforcement-hemisphere), but there are some serious allegations that more internet providers do this as well.
+Here's some you probably don't
+1. All international phone conversations, with full text, and many domestic ones
+1. Virtually every email, foreign and domestic, which flows over the public internet (so, most of them)
 
-This section helps you communicate with other people while reducing your chances of having your message intercepted or tampered with.
+## Monitoring 
+A lot of information also isn't logged, but is monitored in real time. You should assume that every bit of information that flows over the internet is being monitored in real time by the U.S. NSA... While not strictly true, it's very close to true.
 
-## 1.1: Signal / Securing your SMS
+This means that any information which flows over the internet that is not encrypted, will be analyzed.
 
+Stuff deemed "interesting" is *also* logged. This may include all traffic between certain "suspicious" computers.
+
+## Exploit
+This is flaw in a piece of software or hardware, combined with a way to
+"exploit" that flaw to violate the security of a system (whether a device or
+communication system).
+
+## Zero Day Exploit
+Often shortened to simple "Zero Day"  This is an "exploit" that has never been used before. That's important because it means the designers of the system don't have any way to know about the flaw, and thus most likely neither do you.
+
+## Patch 
+A fix for an "exploit". To say that an exploit has been "patched" means that it's been fixed. When you download and install a "patch", or an update containing a patch, you are applying fix to your system.
+
+This terminology seems esoteric, but patching is VERY important. 
+
+If you use good software and hardware, it will usually be fixed pretty fast once the designers find out there's a flaw. Zero day exploits are worth a LOT of money, so neither hackers nor governments want to use them if they don't have to. Instead, they'll use already known exploits taking advantage of the fact that users often don't actually install the patches. 
+
+As a result, most real world security breaches use exploits that have already been patched. Just keeping up with patches (system updates) will put you far ahead of the game. We'll talk about this more in "Device Security".
+
+## Attacker
+An attacker refers to a person trying to get your confidental information. That
+is, they are trying to violate the security of some system that has the
+information.
+
+We're going to use this term a lot. In our analogy earlier, we noted that most
+burglers don't bring ladder. It's important to understand who wants your
+confidental data, so you can understand what tools they have at their
+disposal... do they have a ladder?
+
+## State Actor or "APT"
+This is a specific category of "attacker". Once you're listening for it you'll hear this term pop up in the media a lot. "APT" stands for "Advanced Persistant Threat" and is usually assumed to be synonymous with "a country" (though it's not actually). Thus the other term "State Actor". The critical factor that makes an attacker an APT is that they have a LOT of resources to throw at trying to get confidential information. A country can subpeana corporations and make them hand over info, physically threaten people, pay millions for black market zero day exploits, build enormous multi-billion dollar computers just for cracking encryption, etc.
+
+If you are a loud political disidant trying to keep the U.S. government from getting your confidential information, you're dealing with a state actor. As an example, lets say you're organizing a protest group. While they will likely happily ask the phone company for a log of your location, log all your cellphone calls, spend a couple of physical people to covertly follow you around and see who you talk to in person, etc. You may still not be worth burning a zero day exploit on, or several days of a billion dollar datacenter to crack even poor cryptography. In short... a state actor probably has the "ladder" to reach your second story window. Keeping them out is going to be a bit harder.
+
+Just because they have a ladder or wrecking ball though, doesn't mean they're willing to use it. When your opponent is in to the APT category, while the attacker has many resources, they have other priorities to spend them on and use of those tools may cause political problems. Keep that burgler in mind, what's the easiest path to your confidential information? Don't forget about options like declaring you a terrorist and arresting you. If that's politically feasible, it may be the open door next to the carefully locked window of your technology. 
+
+For these reasons, even in the case of a state actor, there are likely to be limits to what they can or will do, and thus there's hope in making your data "secure enough".
+
+## Malware/Spyware/Trojan
+Malware is any software designed to violate the security of your device.
+
+Spyware refers specifically to software designed to watch what you do, like watching what you type on your keyboard, and usually send that information over the internet to an attacker.
+
+A Trojan is a piece of software designed to allow an attacker to control your device remotely.
+
+So spyware and Trojan's are specific types of malware.
+
+# Device Security
+We've defined device security, lets talk about why we care. If the attacker has direct access to your device, communications using that device aren't going to be secure. All the encryption and authentication aren't going to help if someone can literally see what you are typing in the first place.
+
+So, how do you keep a device secure?
+1. The #1 thing you can do to keep your device secure is to keep the software up to date. Remember the section on patching? Do it.
+1. Don't give your attacker physical access. All devices can be compromised given physical access, without exception, and usually in a way that would be nearly impossible to detect. Examples include keyloggers under the keyboard of a laptop, or in a replacement cellphone screen; firmware modifications to various hardware; Modifications of operating systems or applications; and the list goes on. 
+1. Install only a minimum of software you need, and get it from reputable places if you can. Any software you install could be malware. Software from an app-store is less likely to be a problem, as the corporation running the store is looking for them, but sometimes some slip by. Software you get from an email, or from a website an email pointed you to is very likely to be malware, even if it *looks* like a friend sent the email. We'll talk about email later on.
+
+Some systems are known to have extant exploits, or even be "pre" crompromized from the factory, and aren't getting fixed for one reason or another, so here's a partial list of stuff you may want to avoid, and some alternatives.
+
+You may notice a lot of cellphone issues are on this list. This is partly because of the nature of FCC regulations and closed specs of cellphone chips...  but it's also because everyone uses a cellphone these days, and so governments have a huge incentive to figure out how to get information from them. It's useful to keep in mind that it's far more useful to build exploits for commonly used systems for exactly this reason. Less used systems are less targetted, because the work is the same for less gain. 
+
+## Known Compromised Systems
+### Windows 10
+[Windows 10's EULA stipulates that everything you do on your computer will be logged by Microsoft, and that these logs will be available to the government.](http://www.newsweek.com/windows-10-recording-users-every-move-358952).
+
+Windows is what most laptops you might purchase would come with, so this basically means nearly all factory laptops. Don't worry though, there's some reasonable work-arounds.
+
+Risks:
+1. Everything you do may be logged, and that log may be subpeana'd (or just
+   requested) by a government, or lost to a hacker who infiltrates microsoft.
+
+Alternatives:
+1. Apple computers are one option, though they are quite expensive, and you're still trusting just a single company. On the other hand, some company had to build the hardware, and you have to trust them anyway.
+1. Some laptops can be had with Linux pre-installed. These are usually more than their windows competitors, but may be cheaper than Apple machines. Linux is not made by a single company, and many experts read and modify it looking for security flaws. On the other hand, this does give government agencies an opportunity to add security flaws.
+1. Buy a normal laptop, and install Linux on it for free.
+
+Obviously installing Linux is a bit of complex affair, and likely requires a technical person. That said, it's no harder to use once installed than Windows or OS-X, and most software you'd want to use on it is free... Having a friend help you out may be a good option.
+
+### Lenovo Laptops with Windows
+
+Lenovo laptops have a [history of manufacturer-bundled malware](http://www.theregister.co.uk/2015/08/12/lenovo_firmware_nasty/) which opens a security vulnerability on the system if the system boots Windows. The code is injected before Windows launches. It is considered a malware and it is baked into the physical boards they ship you. This practice has gone on for multiple years, and has caused some [US federal government branches to try to not use the systems anymore](http://www.wsj.com/articles/u-s-navy-looks-to-replace-ibm-servers-for-security-after-lenovo-purchase-1432047582). [Obama has required that several federal agencies get approval for any systems they purchase if the systems are made in China](http://www.reuters.com/article/us-usa-cybersecurity-espionage-idUSBRE92Q18O20130328), supposedly for this reason. 
+
+Risks:
+1. The malware adds a major security flaw to of what would otherwise be secure webbrowsing. This means an attacker may have easy access to modify what you see of the web, including what software you download... functionally compromising the entire device. 
+
+Alternatives:
+1. Install Linux on a Lenovo laptop, or buy a machine made by any other company.
+
+### Cellphones, U.S. 911 support
+
+All cellphones sold in the U.S. are required by law to have 911 support. Ostensibly this is a suite of features allowing a caller to call 911 on any phone without unlocking the phone, having a cell plan, etc. and allows the 911 operator to locate the phone when such a call is made. Most phones sold outside the U.S. are still legal for sale here, and thus still include this feature.
+
+The features that allows this though also allow the phone company to physically locate most phones, not only during a 911 call, but any time the phone is on. This information is usually logged, and is usually available to government agencies upon request, often without a warrent.
+
+Risks:
+1. Logging of your position at all times.
+
+Alternatives:
+1. Tablets without cellphone chips do not have 911 support, so won't have these
+   flaws.
+1. Remove the battery from your phone, leave it at home, or use a burner phone so you're hard to target.
+
+
+### Cellphones, other security flaws
+
+Through a host of security flaws intelligence agencies such as the NSA have the ability to remotely modify the software of most cellphones on the market. It's complex, and also largely unknown *which* models require which types of access, but it should be assumed they can do this fairly easilly to any model phone. This tech seems to be getting deployed at protests (often via cell-site simulators) as well as being used in more clandestine operations. Once modified the agency [gains remote access to all features of the phone](http://money.cnn.com/2014/06/06/technology/security/nsa-turn-on-phone/index.html)
+
+Risks: 
+ 1. The phone can "pretend" to turn off (unless you remove your  battery). Thus continuing to track movements via 911 support or whatever else.
+ 1. The agency can listen to the microphone or take pictures with the camera.
+ 1. The agency can "keylog" meaning intercept your messages as you type them, thus defeating encryption technologies such as Signal.
+
+Alternatives (same):
+1. Tablets without cellphone chips do not have this category of flaw.
+1. Remove the battery from your phone, leave it at home, or use a burner phone so you're hard to target.
+
+### Cellphones and GPS technologies
+Traditional GPS technologies are one-directional (GPS, and Galileo from the U.S. and GlONASS from Russia). The reciever (e.g. your phone) is passive and never sends a signal back to the satteliate. Thus, you can use GPS without giving up your position. This is not true of the latest GPS system out of the Chinese corporation Baidou. This system is bi-directional, and can be used by the Chinese government track your position.
+
+It is believed that Baidou enabled GPS chips add a security flaw similar to U.S. 911 support, the extent is unknown, but that they return the users position to the sattelite is highly probable.
+
+Many new phone GPS chips have the new Baidou GPS feature.
+
+Risks:
+  1. The Chinese government can find out where you are.
+  1. The Chinese government may be able to access other features of your device, including data, etc. (this is still unknown)
+
+Alternatives:
+  1. Find a phone that lists the GPS technologies it supports, and ensure it only includes GLONASS (Russia's system) , or U.S. GPS sattelite systems.
+
+### CellPhone USB Charger Rooting Issues
+
+Remember when we mentioned all devices are vulnerable to physical access? With cellphones, plugging the USB cable in to an unknown device may count as physical access. 
+
+Risks: 
+1. Some older phones have no protection, and anything plugged in to the USB port has full access to the device. Even newer phones are likely to have security flaws in this component. If that thing you plug in (such as a USB charger) has been modified by an attacker, they may be able to violate your device's security. Here's an [example](http://www.extremetech.com/extreme/157207-black-hat-hackers-break-into-any-iphone-in-under-a-minute-using-a-malicious-charger) 
+
+Alternatives:
+1. You could simply only charge your phone using your own adapters, computers, etc.
+1. Depending on lifestyle this might not be an option though. So, alternatively, you can either [purchase](https://www.amazon.com/s/field-keywords=usb+data+block&tag=electronicfro-20) or [cut up an existing wire to make](http://www.instructables.com/id/How-to-make-a-USB-no-data-charger-cable/) a data block USB cable. They are casually known as USB condoms. This is a USB charger where the power lines connect to the device, but the data transmission lines are set up to not connect. If you want to transfer information from your computer to your phone, you will need another cable with the data lines intact.
+
+# Communication Security 
+## Email
+
+## Realtime Chat
+### Signal / Securing your SMS
 Open source, peer-reviewed, and [endorsed by Edward Snowden](https://www.youtube.com/watch?v=j_kieJ-Ng2Q), [Signal](https://whispersystems.org/) is an easy first step for anybody interested in basic security. It has been on both the Android and iOS app stores for many years, and works with most phone OS versions.
 
 Remember that until you have also authenticated your contacts using "verify safety numbers" (in the conversation settings on the android version) you can be sure whoever is getting your information gets it securely, but you will not have a guarantee that the person who is getting it is the person you want to get it.
@@ -77,10 +244,16 @@ If you get a new phone, you will currently have to re-do key exchanges. This is 
 
 You can download signal on the app store or [through their website](https://whispersystems.org/).
 
-## 1.2: Adding Encryption to Existing Messaging Protocols
+### Threema (iOS, Android, Windows Phone)
 
-### OTR for Pidgin / Adium
+Threema is a secured messaging system which focuses on also granting anonyminity and runs a full stack in-house in Switzerland, a very free country by internet standards. You don't sign up with any personal information, and you can only add people by learning their IDs. You can download their app from the app store or [their website](https://threema.ch/en).
 
+### Wickr (iOS, Android, Windows/OSX/Linux Desktop)
+
+Wickr is a secured messaging protocol where messages disappear after a period, like Snapchat except with privacy. Also like Snapchat, it can occassionally be a little fussy until you get use to it. You can download it in the app stores or [on their website.](https://www.wickr.com/personal)
+
+
+### OTR (off the record)
 [Pidgin (Windows and Linux)](https://www.pidgin.im/) and [Adium (OSX)](https://adium.im/) are pieces of software used to connect to many kinds of messaging accounts at once. This means you can be active on more than one Google Talk / Hangouts account at once. Facebook messenger can also be routed through it. Time travelers will be happy to know you can also have this interface handle AIM, MSN, ICQ and a lot more. Adium and Pidgin happen to be the same system reskinned for different operating systems, but this is a common piece of software, and you can find lots of other pieces that do the same thing.
 
 The Pidgin/Adium system has a great plugin called OTR, which is written by the group [Cypherpunks](https://otr.cypherpunks.ca/). OTR means Off The Record, and turns on encryption end-to-end with anybody else who has installed the plugin. Remember that authentication is a differnet problem than security, and that you should make sure any new keys actually belong to your friends before discussing anything really important.
@@ -91,72 +264,22 @@ Here is [how you set up OTR on Adium](https://adium.im/help/pgs/AdvancedFeatures
 
 Pidgin is not as reliable as it could be for video chat, mostly because certain platforms don't properly support video chat in their APIs. If you want to have a video chat, you may want to sign onto the client through the old way, and run the chat from there. It will not be encrypted. 
 
-### XMPP
+### XMPP apps
 
 XMPP is am open-source messaging archiecture designed to be secure. Both Google Talk and WhatsApp started as forks of this platform, and to this day you can connect to talk with XMPP users through a Google Talk account. 
 
 To run XMPP, you will need a client (Pidgin and Adium will work). You will also need your own server, or somebody else's server to connect to. Remember that if you don't trust whoever is running your server, you aren't that far ahead of using one of the existing corporate services.
 
-## 1.3 Secured Messaging Protocols
+### Voice Chat
 
-Phones in particular do not have options like pidgin/adium, so here are some apps which will be alternative messaging options:
+### Video Chat
 
-### Threema (iOS, Android, Windows Phone)
-
-Threema is a secured messaging system which focuses on also granting anonyminity and runs a full stack in-house in Switzerland, a very free country by internet standards. You don't sign up with any personal information, and you can only add people by learning their IDs. You can download their app from the app store or [their website](https://threema.ch/en).
-
-### Wickr (iOS, Android, Windows/OSX/Linux Desktop)
-
-Wickr is a secured messaging protocol where messages disappear after a period, like Snapchat except with privacy. Also like Snapchat, it can occassionally be a little fussy until you get use to it. You can download it in the app stores or [on their website.](https://www.wickr.com/personal)
-
-## 1.4: Encrypting Your Email
-
-# 2: Anti-Censorship
-
-## 2.0: Censorship Mechanics
-
+## Web Browsing
 Governments such as China outright block many websites outside their country. Governments like Pakistan are intercepting all outbound traffic before it leaves the country so they can watch it.
 
 These measures are meant to help you keep access to content which a dictatorship does not want you to see.
 
-## 2.1: VPNs 
-
-A VPN, or Virtual Private Network, is essentially a computer based somewhere else and a secure tube to it. All communications from your computer flow over this tube, and out the other computer, as if your computer were where the VPN computer is. You can use this remote computer's view to see whatever the internet looks like from the perspective of that computer. This means that if a website is blocked in your country, you can use a VPN to "get to the internet" in another country, and then see the website.
-
-They are commonly used now to get around traffic shaping measures by your ISP (Internet Service Provider: aka Comcast etc). ISPs illegally (under net neutrality) throttle services like Netflix all the time. If you're using a VPN though, the tube traffic is flowing over a secure tube first, to another computer. Since the tube is secure (encrypted), the ISP can't *tell* what type of traffic it is. So, opening a VPN to a colo means that they can't really traffic shape your internt traffic, they can only turn the speed up and down monolithically, impacting all traffic in the VPN. VPNs are also used to make working on unsecured coffee shop wifi reasonable, and can be used to sidestep snooping by non-government actors, such as your school or workplace.
-
-With a VPN, outside actors will still be able to see that you are sending data out of the country if they are watching the VPN. They will be able to tell who you are unless you somehow make it incredibly difficult for them to tell what computer is connecting to the VPN. If the VPN is compromised, outside actors will be able to see what you look at, and possibly change what you are looking at.
-
-This is why you want the other end of your VPN to come out in a place not controlled by whoever you are concerned is spying on you.
-
-To set up a VPN, you will need to get an endpoint (normally a rented machine in a data center) and to configure your computer so all traffic goes through that endpoint. We are working to figure out easy ways to make this technology accessible to less technical people. We reccomend [OpenVPN](https://openvpn.net/index.php/open-source/documentation/howto.html#quick). Other options are explained in [the AnonOps #OpNewBlood VPN tutorial](https://newblood.anonops.com/vpn.html), which is the best nontechnical VPN overview we have found. You may want to consider doing your own homework on what VPN provider you ultimately choose, since that website is accurate but a bit shady.
-
-Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
-
-## 2.3: TOR
-
-TOR stands for "The Onion Router". [TOR]( https://www.torproject.org/) is software and accompanying network used to help acheive anonymity on the internet, most often used for webbrowsing.
-
-The Weakness of a VPN, as noted above, is that the VPN provider knows exactly who you are, and can look at your traffic. TOR attempts to fix this flaw.
-
-Imagine you use one VPN. Then, set up a VPN to another machine, and another.  When your traffic leaves your machine it's wrapped in 3 layers of encryption.  The first machine strips away 1 layer, leaving 2 more. second VPN another layer, and the third VPN yet another finally sending your traffic out on to the open internet. This is essentially how TOR works.
-
-The idea is that the VPN machine knows who you are, but can't see your traffic. The last can see your traffic, but only knows the machine it's talking to, not who you are.  
-
-### TOR browser
-The easiest solution for using tor is probably to install the [TOR browser](https://www.torproject.org/projects/torbrowser.html.en).
-
-### Known security problems
-
-Government agencies are able to track down TOR communications, and have staged several [major crackdowns on illegal activity using TOR](https://www.wired.com/2014/11/operation-onymous-dark-web-arrests/). It is widely believed that the U.S. NSA is running a large portion of the nodes. TOR depends on that first and last machine not colluding, if both are machines run by the same people you lose.
-
-# 3: Browsing Privacy 
-
-## 3.0: What This Means
-
-A lot can be inferred about you by looking at what you look at online. All of the techniques in the anti-surveillance section help with this, but here are some ways to keep your browsing more private.
-
-## 3.1: DNS privacy leak
+### 3.1: DNS privacy leak
 Domain name service.
 
 The internet works based in IP addresses. When you visite a website like "www.google.com", your computer has to look up what IP to send traffic to to reach "www.google.com". To do this it uses DNS. Usually your machine asks the nearest router the question, if it doesn't know it passes the question on up the hierarchy, and eventually when someone has the answer they respond, that DNS server responds in kind, etc. until the nearest router tells your machine the answer.
@@ -171,7 +294,7 @@ Solutions: If you are using a VPN, or TOR and do not want your traffic being see
 
 // TODO: Add DNS proxy information here
 
-## 3.2: HTTPS
+### 3.2: HTTPS
 
 HTTPS is encryption and authentication of traffic between your machine and a website. HTTPS is the reason that it's reasonable to use your bank's website, and expect that your internet provider (or local coffee shop) can't see your password
 
@@ -188,6 +311,38 @@ Each of these companies holds a "root" cert, which can sign other certs. By sign
 
 If an attacker redirected all traffic everywhere, they'd likely get caught, so these attacks are usually local... such as via [hotel wifi](http://www.zdnet.com/article/hackers-are-using-hotel-wi-fi-to-spy-on-guests-steal-data/). Thus, VPN will often work around it.z
 
+### VPNs 
+
+A VPN, or Virtual Private Network, is essentially a computer based somewhere else and a secure tube to it. All communications from your computer flow over this tube, and out the other computer, as if your computer were where the VPN computer is. You can use this remote computer's view to see whatever the internet looks like from the perspective of that computer. This means that if a website is blocked in your country, you can use a VPN to "get to the internet" in another country, and then see the website.
+
+They are commonly used now to get around traffic shaping measures by your ISP (Internet Service Provider: aka Comcast etc). ISPs illegally (under net neutrality) throttle services like Netflix all the time. If you're using a VPN though, the tube traffic is flowing over a secure tube first, to another computer. Since the tube is secure (encrypted), the ISP can't *tell* what type of traffic it is. So, opening a VPN to a colo means that they can't really traffic shape your internt traffic, they can only turn the speed up and down monolithically, impacting all traffic in the VPN. VPNs are also used to make working on unsecured coffee shop wifi reasonable, and can be used to sidestep snooping by non-government actors, such as your school or workplace.
+
+With a VPN, outside actors will still be able to see that you are sending data out of the country if they are watching the VPN. They will be able to tell who you are unless you somehow make it incredibly difficult for them to tell what computer is connecting to the VPN. If the VPN is compromised, outside actors will be able to see what you look at, and possibly change what you are looking at.
+
+This is why you want the other end of your VPN to come out in a place not controlled by whoever you are concerned is spying on you.
+
+To set up a VPN, you will need to get an endpoint (normally a rented machine in a data center) and to configure your computer so all traffic goes through that endpoint. We are working to figure out easy ways to make this technology accessible to less technical people. We reccomend [OpenVPN](https://openvpn.net/index.php/open-source/documentation/howto.html#quick). Other options are explained in [the AnonOps #OpNewBlood VPN tutorial](https://newblood.anonops.com/vpn.html), which is the best nontechnical VPN overview we have found. You may want to consider doing your own homework on what VPN provider you ultimately choose, since that website is accurate but a bit shady.
+
+Iceland has shown an interest in being a center for digital freedom. Further research on the best VPN endpoints is appreciated, but for now, Iceland is advised for your endpoint.
+
+### 2.3: TOR
+
+TOR stands for "The Onion Router". [TOR]( https://www.torproject.org/) is software and accompanying network used to help acheive anonymity on the internet, most often used for webbrowsing.
+
+The Weakness of a VPN, as noted above, is that the VPN provider knows exactly who you are, and can look at your traffic. TOR attempts to fix this flaw.
+
+Imagine you use one VPN. Then, set up a VPN to another machine, and another.  When your traffic leaves your machine it's wrapped in 3 layers of encryption.  The first machine strips away 1 layer, leaving 2 more. second VPN another layer, and the third VPN yet another finally sending your traffic out on to the open internet. This is essentially how TOR works.
+
+The idea is that the VPN machine knows who you are, but can't see your traffic. The last can see your traffic, but only knows the machine it's talking to, not who you are.  
+
+#### TOR browser
+The easiest solution for using tor is probably to install the [TOR browser](https://www.torproject.org/projects/torbrowser.html.en).
+
+#### Known security problems
+
+Government agencies are able to track down TOR communications, and have staged several [major crackdowns on illegal activity using TOR](https://www.wired.com/2014/11/operation-onymous-dark-web-arrests/). It is widely believed that the U.S. NSA is running a large portion of the nodes. TOR depends on that first and last machine not colluding, if both are machines run by the same people you lose.
+
+
 # 4: Information Distribution, Verification, and Storage
 
 # 4.0: Distribution and Protection Needs
@@ -199,56 +354,6 @@ The normal solution to this is to use a decentralized information network. Bit T
 Unfortunately, knowing if you can trust a file you download is a problem we have everywhere on the internet. Malicious people can switch out files on your network. This is why we also have systems to verify that a file has not been tampered with in transit, and that it comes from where you think it comes from.
 
 Once you have sensitive information, you need secure ways to store it.
-
-### Known Compromised Systems
-
-#### Windows 10
-[Windows 10's EULA stipulates that everything you do on your computer will be logged by Microsoft, and that these logs will be available to the government.](http://www.newsweek.com/windows-10-recording-users-every-move-358952) This is why there will be a lesson in installing an option other than Windows called Linux.
-
-Linux is not made by a single company. It has a core, and a wide variety of distributions have been built on that. There are conflicting borderline religious opinions on what distribution is best. 
-
-#### Lenovo Laptops
-
-Lenovo laptops have a [history of manufacturer-bundled malware](http://www.theregister.co.uk/2015/08/12/lenovo_firmware_nasty/) which opens a security vulnerability on the system if the system boots Windows. The code is injected before Windows launches. It is considered a backdoor on the system and it is baked into the physical boards they ship you. This practice has gone on for multiple years, and has caused some [US federal government branches to try to not use the systems anymore](http://www.wsj.com/articles/u-s-navy-looks-to-replace-ibm-servers-for-security-after-lenovo-purchase-1432047582). [Obama has required that several federal agencies get approval for any systems they purchase if the systems are made in China](http://www.reuters.com/article/us-usa-cybersecurity-espionage-idUSBRE92Q18O20130328), supposedly for this reason. 
-
-#### Cell Phone USB Charger Rooting Issues
-
-USB, the protocol by which most cell phones charge, has a strict master/slave protocol. That means that one end of the protocol has nearly complete control over the other. In the case of phones that use USB, your phone is always the slave. This means that anything you plug your phone into to charge can install malware on your phone if it has a computer chip in it and somebody can access that chip to put malware on it. [This includes iPhones](http://www.extremetech.com/extreme/157207-black-hat-hackers-break-into-any-iphone-in-under-a-minute-using-a-malicious-charger) even though the end of the USB cord looks different. Look out for USB chargers in airplanes, since their security in particular is extremely questionable and jerks have literally hours where they often have nothing better to do than root a whole planeful.
-
-Since asking you to never charge your phone from anything with a chip ever again is a lot, you are advised to either [purchase](https://www.amazon.com/s/field-keywords=usb+data+block&tag=electronicfro-20) or [cut up an existing wire to make](http://www.instructables.com/id/How-to-make-a-USB-no-data-charger-cable/) a data block USB cable. They are casually known as USB condoms. This is a USB charger where the power lines connect to the device, but the data transmission lines are set up to not connect.
-
-If you want to transfer information from your computer to your phone, you will need another cable with the data lines intact.
-
-#### Cellphones and U.S. 911 support
-
-All cellphones sold in the U.S. are required by law to have 911 support. Ostensibly this is a suite of features allowing a caller to call 911 on any phone without unlocking the phone, having a cell plan, etc. and allows the 911 operator to locate the phone when such a call is made. Most phones sold outside the U.S. are still legal for sale here, and thus still include this feature.
-
-The features that allows this though also allow the phone company to physically locate most phones, not only during a 911 call, but any time the phone is on. This information is usually logged, and is usually available to government agencies upon request, often without a warrent.
-
-#### Cellphones and other security hacks
-
-Through a host of security flaws intelligence agencies such as the NSA have the ability to remotely modify the software of most cellphones on the market. It's complex, and also largely unknown *which* models require which types of access, but it should be assumed they can do this fairly easilly to any model phone. This tech seems to be getting deployed at protests (often via cell-site simulators) as well as being used in more clandestine operations.
-
-Once modified the agency [gains remote access to all features of the phone](http://money.cnn.com/2014/06/06/technology/security/nsa-turn-on-phone/index.html)
-. Examples:
- 1. The phone can "pretend" to turn off (unless you remove your  battery). Thus continuing to track movements via 911 support or whatever else.
- 1. The agency can listen to the microphone or take pictures with the camera.
- 1. The agency can "keylog" meaning intercept your messages as you type them, thus defeating encryption technologies such as Signal.
-
-Solutions: Remove the battery from your phone, leave it at home, and/or use a burner phone so it's harder to target you.
-
-## Cellphones and GPS technologies
-Traditional GPS technologies are one-directional (GPS, and Galileo from the U.S. and GlONASS from Russia). The reciever (e.g. your phone) is passive and never sends a signal back to the satteliate. Thus, you can use GPS without giving up your position. This is not true of the latest GPS system out of the Chinese corporation Baidou. This system is bi-directional, and can be used by the Chinese government track your position.
-
-It is believed that Baidou enabled GPS chips add a security flaw similar to U.S. 911 support, the extent is unknown, but that they return the users position to the sattelite is highly probable.
-
-Many new phone GPS chips have the new Baidou GPS feature.
-
-#### Cellphones and Fishing apps
-
-Many apps are being written and released by attackers as a method of controlling your phone, without using more advanced techniques. See Cellphones and other security hacks for what this would likely allow the attacker to do.
-
-Solutions: Minimize the apps on your phone, and do not install apps from random sources. This type of attack is likely to be a "fish" attack, meaning someone convinces you to install an app using an email or similar. Don't fall for it.
 
 #### Wifi routers
 
