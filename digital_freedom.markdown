@@ -575,6 +575,12 @@ Facial recognition software has gotten good enough to easilly identify your face
 
 This means you can easilly be outed by someone's well-intentioned post to social media, happening to pass by a security camera, a police car camera, a police body camera, etc. Depending on where you are located traffic cameras may or may not record all the time, and may or may not be reviewed by authorities.
 
+## License plate recognition software
+
+This is used at all border stops within the U.S. (you do not have to cross a border to cross a border patrol stop). It's also used on many bridges now for tolls. Additionally you'll often see cameras pointed at the highway as you cross state boundaries.
+
+Also, consider the possability of this being used anywhere facial recognition software might be used. Police body cams, car cams, security cameras, etc. 
+
 ## Filming Police Conduct
 
 While a few areas have made this legally difficult (and you should check) the [ACLU has provided software which will automatically upload any video you take and send it to your local ACLU chapter.](https://www.aclu.org/feature/aclu-apps-record-police-conduct)
