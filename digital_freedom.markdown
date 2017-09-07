@@ -20,6 +20,9 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 This information is kept in git format because it is easy to transmit git repos peer-to-peer. You are encouraged to download a copy. Suggestions on how to keep the guide trustworthy and from having merge issues in a peer-to-peer environment are appreciated. 
 
+## Disclaimer
+The primary author is not a lawyer, and none of the colaborators are known to be one either. This document is not legal advice. 
+
 # Terminology
 ## Security
 Security is a very nebulous term, including concepts like financial security, so for our purposes we're going to stick to 2 particular types of security.
@@ -65,6 +68,15 @@ In practice encryption methods suffer from 2 classes of problem
 Why are we bringing this up? Because, it's important to realize that no matter what you do, if your conversation is "logged" (stored somewhere) by someone, even if it's encrypted so they can't read it now, some day they may be able to read it. The cost to do so will also constantly drop as computers get faster.
 
 We'll try and address how *good* a technology's encryption is. Good generally means "probably won't be easy to read within your lifetime".
+
+## Availability
+Security is one issue, and an important one, but it's not quite all encompassing. It's easy to make something secure by locking it a steel box and burying where no-one can find it. Availability is the important balancing factor.
+
+In the context of communication this is whether it's possible to get a message to the person you intend. We generally don't talk about systems that aren't at least *okay* at this, so it won't come up much there.
+
+In the context of web-browsing though it's much more interesting. Websites can be out there, but you may not be able to get to them. Governments such as China outright block many websites outside their country. Governments like Pakistan, India, etc. are intercepting all outbound traffic before it leaves the country so they can watch it. So, while a website may be available to someone in the U.S. it may not be available to someone in China.
+
+When you are browsing the web trying to find some information though, it's not a particular website you want, it's a particular piece of information. For this reason there is a third context that's important. This is "Information Availability". 
 
 ## Logging
 Logging technical terminology for the simple act of storing information. Almost every system in the technical world is constantly logging. It's pretty obvious why you might care about logging if you are worried about confidental information and communications. So, here are a few things that are logged, for you to keep in mind: 
@@ -144,6 +156,19 @@ So, how do you keep a device secure?
 Some systems are known to have extant exploits, or even be "pre" crompromized from the factory, and aren't getting fixed for one reason or another. Here's a partial list of certain products and their associated risks as well possible alternatives.
 
 You may notice a lot of cellphone issues are on this list. This is partly because of the nature of FCC regulations and closed specs of cellphone chips...  but it's also because everyone uses a cellphone these days, and so governments have a huge incentive to figure out how to get information from them. It's useful to keep in mind that it's far more useful to build exploits for commonly used systems for exactly this reason. Less used systems are less targetted, because the work is the same for less gain. 
+
+## Tails
+This section is rather long, if it's all to much for you and you just want to read a webpage anonymously, you might consider using Tails. To use tails you simply download it and put it on a CD or USB-key, reboot your machine and boot it (to bring up this option try hitting "f1" "f2" or "f12" during boot until one of them brings up a menu with the word "Boot" in it and "USB" as an option... select it).
+
+You can download it [here](https://tails.boum.org/). Tails is basically already set up "right" to be about as secure as you can get. 
+
+When you are done you can simply remove the CD or USB-key, reboot your computer, and you go back to your everyday life. 
+
+Risks:
+1. Tails isn't going to save you from a completely compromised device. It helps, but only a little.
+1. Tails does nothing special to avoid correlating browsing information.
+
+Result: If this meets your needs, it's a fast work-around to a lot of complicated setup, much like tor-browser (which we'll talk about later) but even more so. But, it's not magic and you still should probably read the rest of this.
 
 ## Known Compromised Systems
 ### Windows 10
@@ -237,9 +262,56 @@ Alternatives:
  1. You could simply only charge your phone using your own adapters, computers, etc.
  1. Depending on lifestyle this might not be an option though. So, alternatively, you can either [purchase](https://www.amazon.com/s/field-keywords=usb+data+block&tag=electronicfro-20) or [cut up an existing wire to make](http://www.instructables.com/id/How-to-make-a-USB-no-data-charger-cable/) a data block USB cable. They are casually known as USB condoms. This is a USB charger where the power lines connect to the device, but the data transmission lines are set up to not connect. If you want to transfer information from your computer to your phone, you will need another cable with the data lines intact.
 
+## Full Disk Encryption
+Full disk encryption is exactly what it sounds like. To boot the machine you type a password which is stored in memory, and used to decrypt the data as it's accessed. This is useful if your security concerns include direct physical access to your computer. Full disk encryption can save a lot of concern if a machine is physically lost, or fails in a way that makes deleting the data on the harddrive difficult.
+
+Due to the ease of use and the utility in cases of perfectly routine loss, theft, machine failure, or just giving your old computer to a friend, everyone using a system that supports it easilly should probably use disk encryption. 
+
+On Apple computers you can simply enable this at any time and it will convert the whole drive to being encrypted.Under Linux most major distros now have an option to enable this during install. Windows has several 3'rd party products available to do this as well, but it may be a bit more complex to set up.
+
+Risks:
+ 1. Bus mastered protocols (firewire): If your machine is left on (sleeping usually suffices), an attacker with physical access can plug a device in to a bus-mastered the port. Older USB specs are not sufficient. This attack has been demonstrated with firewire, and it is likely that USB-C and Thunderbolt have the same flaw (since they seem to support bus-mastering). Since the key is stored in memory they can access it directly, or ask the system to decrypt the data for them and stream it to the newly plugged in device... accessing your data despite the encryption.
+ 1. 2 physical accesses: An attacker can remove the storage device and edit the bootloader to record the key in plaintext on the boot partition next time you start your machine. They then put the device back in to your machine. Next time they get access to your machine the key is right there, and they can access everything.
+
+Result: It's not magic, but it's a hugely helpful in a myriad of circumstances. Use it if your system makes it easy (Apple and Linux machines at least).
+
+## Getting Rid of Data / Destroying a Hard Drive
+
+If you are using full disk encryption, and don't have the FBI or something after you, don't worry about it. 
+
+If you aren't using full disk encryption though, you should seriously consider what is on your machine before ever letting it out of your hands. In that case the following sections may be important to you
+
+### Data Erasure
+
+Deleting files does not mean they are gone from your computer. It only means that you have told your computer they aren't there, and may be overwritten with other data. Until another program actually overwrites the space (something hard to determine), anybody with the right tools can recover the information.
+
+Even after you overwrite the data the first time, it is still possible (though more difficult) to recover data. A state police lab can do this easilly, as can some individuals. This is why there are programs on the internet which will write your drive to entirely zeros, or even random junk data to your drive over and over again for you. Running these over and over again will progressively decrease the odds that data can be recovered to the point of near impossability, but will not 100% guarantee it.
+
+### Physical Destruction
+
+At this point physically destroying the drives may be a good option. Just smashing the "drive" which stores the data makes getting the data harder. However, if you have [really attracted some attention to yourself](http://www.popularmechanics.com/technology/security/how-to/a8566/how-to-read-a-smashed-hard-drive-14877558/), you should know that the relevant pieces of data can be stored on extremely small pieces of the drive, so it can be difficult to make sure you have properly destroyed the drive. 
+
+Corporations with serious data security concerns go through a fairly specific process. Best practice today is:
+ 1. Have the drive encrypted in the first place, just in case it goes missing.
+ 1. "Degause" the drive. This means to run very strong magnets over it over and over, flipping the field back and forth. This is similar (but much faster) than writing lots of random data over it repeatedly.
+ 1. Powder the drive. Meaning to literally grind the drive in to dust.
+
+This will always work, but most of us don't have a machine capable of powdering a hard-drive lying around. So lets talk about doing it by hand. There are two kinds of hard drives, and each have different relevant parts to destroy.
+
+#### HDD: Hybrid Hard Drive (Old Kind)
+
+The data is kept on a circular object called a platter. If you open the case, it is the large circular thing. Remove it (you can smash it to make it easier to remove, but that won't do it on its own). Watch out for the magnets, which are strong enough to break fingers if they become dislodged and rush together with you in the middle. Make sure you leave nothing connected to the center, as your data takes up extremely small amounts of space.
+
+#### SSD: Solid State Drive (New Kind. Sometimes in desktops, almost always in laptops)
+
+When you access a solid state hard drive's board, you will see a bunch of black computer chips which are likely symetrically mounted. Your data is stored in those chips. You can pry the chips off the board with a flathead screwdriver. Idealy you then smash these chips as well.
+
+//TODO picture of a SSD because this is confusing
+
 # Communication Security 
 ## Email
-
+### PGP
+### Remailers
 ## Realtime Chat
 ### Normal Text Messaging
 Cellphone type text messaging has a number of security flaws inherent in it's
@@ -298,7 +370,7 @@ Risks:
  1. Note that by default your conversation is also logged by google, but you can
    turn this off by turning on "OTR"... Note that this OTR has nothing to do
    with the algorithm discussed earlier and just disables logging.
- 1. A third part can see that you are talking, only google can see who you are
+ 1. A third party can see that you are talking, only google can see who you are
    talking to.
 
 Results: Weak authentication, weak encryption, poor anonymity
@@ -349,7 +421,7 @@ the same.
 Cellphones, Facebook/google web interfaces all follow the same patterns. Pidgin/Adium don't do this very well.
 
 ## Video Chat
-
+// TODO
 
 ## Web Browsing
 Lets talk about our three properties in the context of webbrowsing. When browsing:
@@ -360,16 +432,24 @@ Lets talk about our three properties in the context of webbrowsing. When browsin
    website
  1. Anonymity means that no-one but you and the website know you even *visited*
    the website.
+ 1. Availability means the ability to get to a website
 
-In webbrowsing there is a fourth property we want to talk about, and that is "Availability". Governments such as China outright block many websites outside their country. Governments like Pakistan, India, etc. are intercepting all outbound traffic before it leaves the country so they can watch it. So, while a website may be available to someone in the U.S. it may not be available to someone in China. 
+First, lets talk about how things work at their base, and some of the problems
+that arise.
 
 #### HTTPS
+
 HTTPs is the primary tool intended to supply authorization and encryption. HTTPs is often referred to as the "green lock" that most browsers show when you visit a website with this feature. This "green lock" means that your link is using HTTPs and thus theoretically ought to have both authorization and encryption. Unfortunately, HTTPs doesn't do it's job very well. It turns out that it's quite easy for governments, as well as a few special corporations, to flat out bypass the authorization IF they can manage to intercept your traffic. As bad as HTTPs is though for authorization, it's basically the only authorization tool we have at our disposal for most webbrowsing... so, we'll talk about how to improve these properties despite HTTPs' poor design. So, if you have a "green lock" you have encryption, but not authorization or anonymity, and depending where you are you may also lack availability of some sites.
 
 #### DNS
+
 When you visite a website like "www.google.com", your computer has to look up where on the internet that website is. To do this it uses DNS (Domain Name Service). Usually your machine asks the nearest router the question (like the wifi access point you have at home). If that device doesn't know it passes the question on up the hierarchy, and eventually when someone has the answer they respond, that DNS server responds in kind, etc. until the nearest router tells your machine the answer. This is important because DNS has no authorization, security, encryption, or anonymity... at all. Amazingly, despite a few very week/failed attempts to fix this, there are absolutely no provisions to make this process secure.
 
-Note that each of the technologies listed may have other security gains. Here, to aid understanding, I'm listing them for their *primary* use.
+#### Wifi access points
+
+Wifi router software is usually written poorly and quickly by amateur programmers. Government agencies and other hackers alike are now targetting wifi routers as they are so easy.
+
+Because of this, someone may be watching everything you do online via that router. So, you may want to treat even your own home wifi like you were in a hotel or coffee shop (see VPN and TOR).
 
 ### Improving Encryption
 #### HTTPS Everywhere (Firefox, Chrome, Android, Opera)
@@ -377,9 +457,11 @@ Note that each of the technologies listed may have other security gains. Here, t
 HTTPS Everywhere is an add-on for your browser which makes sure your browser uses HTTPS whenever it can. Read more about it [here](https://www.eff.org/https-everywhere).
 
 ### Improving Authorization and Availability
+
 Remember that I said that governments and some corporations can violate the authorization of HTTPS if they can intercept your traffic? That's an important if. There are methods to make that interception more difficult.
 
 #### VPNs 
+
 A VPN, or "Virtual Private Network", is essentially a computer based somewhere else and a secure tube to it. Most communications from your computer flow over this tube and out the other computer, as if your computer were where the VPN computer is.
 
 There are several reasons to use a VPN:
@@ -401,6 +483,7 @@ Risks:
 Results: Might help with anonymity. It makes redirecting your traffic a little harder, so it's a small help to authorization. Can be used to route outside your country, so helps availability.
 
 ### Improving Anonymity
+
 This is the hardest proerty to to get while webbrowsing.
 
 There are a lot of things against you. What you do on wifi is visible to everyone using that wifi. Additionally it's visible to the Internet provider (the company you pay for "internet", like comcast or AT&T), and to lots of other corporations and government entities on it's way to the website.
@@ -457,103 +540,40 @@ TOR browser is like any other web browser. It's the bit of software you load to 
 
 Note that the TOR Browser solves the DNS request leak for you, and even helps a bit with browser identification. In short, if you don't know what you are doing it "just works". Install it, and is use it, preferrably without configuring ANYTHING. That's about the best anonymity you can get.
 
-# 4: Information Distribution, Verification, and Storage
-
-# 4.0: Distribution and Protection Needs
+# Maintaining Information Availability 
+We've talked already about how to get to websites that might be blocked where you are... but what about websites being taken down entirely, and the data simply disappearing from the internet? This is where "Information Availability" becaomes an issue.
 
 Government removal of information from the internet is becoming increasingly easy. The United States government already has the infrastructure and authority to [seize domain names](https://www.justice.gov/usao-sc/pr/federal-court-orders-seizure-67-website-domains-involved-smuggling-and-selling-misbranded), effectively removing sites from the interent. 
 
-The normal solution to this is to use a decentralized information network. Bit Torrent is one of the protocols often used to do this. This solves the problem of any one central point of failure, but anybody can put a torrent up, so you don't know if it is trustworthy.
+## Help host it (Tech savy only)
+In many cases sites may get taken down by a government due to being "illegal" in that country for some reason. If that data is legal in *your* country, you may be able to download or copy that information, and put it up yourself.
+
+Before doing this sort of thing, check your local laws. Consider consulting a lawyer, etc. Make sure that you aren't putting yourself in more danger than you are comfortable with. 
+
+## Decentralized storage networks
+Hosting in another country can definitely help, but the site may still be blocked to people who you'd like to have access to it, or possibly it's not possible to host it anywhere, what else can we do?
+
+The normal solution to this is to use a decentralized information network. Bit Torrent is one of the protocols often used to do this. This solves the problem of any one central point of failure. The downside of such distributed networks is trust. Anybody can put a torrent up, so you don't know if it is trustworthy, it might actually be malware.
 
 Unfortunately, knowing if you can trust a file you download is a problem we have everywhere on the internet. Malicious people can switch out files on your network. This is why we also have systems to verify that a file has not been tampered with in transit, and that it comes from where you think it comes from.
 
-Once you have sensitive information, you need secure ways to store it.
+### Torrenting
 
-#### Wifi routers
+### Signatures and Checksums
 
-Wifi router software is usually written poorly and quickly by amateur programmers. Government agencies and other hackers alike are now targetting wifi routers as they are so easy.
 
-Solutions: Higher quality routers are harder targets for hackers, such as Google's product. Unless you are technical enough to be fairly sure it may be a good idea to treat any router much like hotel wifi.
 
-## 4.1: Torrenting
+# Anonyminity for in Person Work
 
-## 4.2: Signatures and Checksums
+## Cellphones
 
-## 4.3: Full Disk Encryption
-
-Full disk encryption is exactly what it sounds like. To boot the machine you type a password which is stored in memory, and used to decrypt the data as it's accessed. This is useful if your security concerns include direct physical access to your
-
-Under Linux most major distros now have an option to enable this during install.
-
-Note that full disk encryption can save a lot of concern if a machine is physically lost, or fails in a way that makes deleting the data on the harddrive difficult.
-
-### Weaknesses
-Note that, there are still ways for someone with access to your machine may be able to get your data.
-
- 1. Bus mastered protocols (firewire): If your machine is left on (sleeping usually suffices), an attacker with physical access can plug a device in to a bus-mastered the port. Older USB specs are not sufficient. This attack has been demonstrated with firewire, and it is likely that USB-C and Thunderbolt have the same flaw (since they seem to support bus-mastering). Since the key is stored in memory they can access it directly, or ask the system to decrypt the data for them and stream it to the newly plugged in device... accessing your data despite the encryption.
-
- 1. 2 physical accesses: An attacker can remove the storage device and edit the bootloader to record the key in plaintext on the boot partition next time you start your machine. They then put the device back in to your machine. Next time they get access to your machine the key is right there, and they can access everything.
-
-## 4.4: Getting Rid of Data / Destroying a Hard Drive
-
-This is probably not generally necessary, as you are unlikely to get federal agents interested enough in your computer to come put your hard drives back together, but the guide wouldn't really be complete without this.
-
-### Data Erasure
-
-Deleting files does not mean they are gone from your computer. It only means that you have told your computer they aren't there. Until another program overwrites the space with more data, anybody with the right tools can recover the information.
-
-Even after you overwrite the data the first time, people with large amounts of resources can still recover data. A state police lab will easily have these resources. This is why there are programs on the internet which will write your drive to entirely zeros, or even random junk data to your drive over and over again for you. Running these over and over again will decrease the odds that data can be recovered, but will not guarantee it.
-
-### Physical Destruction
-
-Physically destroying the drives is a good option, and in most cases just smashing the part which store the data is enough. However, if you have [really attracted some attention to yourself](http://www.popularmechanics.com/technology/security/how-to/a8566/how-to-read-a-smashed-hard-drive-14877558/), you should know that the relevant pieces of data can be stored on extremely small pieces of the drive, so it can be difficult to make sure you have properly destroyed the drive. There are two kinds of hard drives, and each have different relevant parts to destroy.
-
-Corporations with serious data security concerns go through a fairly specific process. Best practice today is:
- 1. Have the drive encrypted in the first place, just in case it goes missing.
- 1. "Degause" the drive. This means to run very strong magnets over it over and over, flipping the field back and forth. This is similar (but much faster) than writing lots of random data over it repeatedly.
- 1. Powder the drive. Meaning to literally grind the drive in to dust.
-
-#### HDD: Hybrid Hard Drive (Old Kind)
-
-The data is kept on a circular object called a platter. If you open the case, it is the large circular thing. Remove it (you can smash it to make it easier to remove, but that won't do it on its own). Watch out for the magnets, which are strong enough to break fingers if they become dislodged and rush together with you in the middle. Make sure you leave nothing connected to the center, as your data takes up extremely small amounts of space.
-
-#### SSD: Solid State Drive (New Kind. Sometimes in desktops, almost always in laptops)
-
-When you access a solid state hard drive's board, you will see a bunch of black computer chips which are likely symetrically mounted. Your data is stored in those chips. You can pry the chips off the board with a flathead screwdriver. Idealy you then smash these chips as well.
-
-//TODO picture of a SSD because this is confusing
-
-#### Destruction
-
-There are a variety of options out there, but you can always smash the storage portions stuff up until a paper shredder will finish your job for you. 
-
-#### Disposal
-
-The bigger trick is making the pieces hard to find. Your can always take a nice drive down the freeway and pour the little remaining fragments out a window.
-
-# 5: Internet Anonymity
-
-## 5.0: Need
-
-## 5.1: Remailers
-
-## 5.2: Your IP Address
-
-## 5.3: What Is a Clean Computer?
-
-## 5.4: Tails
-
-Tails is [live CD/USB software](https://tails.boum.org/) which has a lot of preconfigured privacy and encryption software. This means you'll set up a drive, reboot your computer to use that disk as a hard drive, and when it turns back on, your computer will be secured by default. Then, when you turn your computer off again and remove the drive, you can turn it back on again and access your files on your hard drive as normal.
-
-# 6: Anonyminity for in Person Work
+Please read the sections on "Device Security" relating to cellphones if you haven't already. This is relevent even if you aren't using your device, and even it appears to be turned off! Can give up your position, as well as record other information about you.
 
 ## Facial Recognition Software
 
-## IMSI Catchers
+Facial recognition software has gotten good enough to easilly identify your face in any pictures taken with you in them.
 
-When your phone connects to a tower, the tower knows which phone it is. Police forces now have fake towers which will record all phones which connect to them. This can be used to de-anonymize protestors. 
-
-The best defense (inconvenient as it is) is to have a cheap burner phone which you only use for political action. Android phones are available for ~$60 now.
+This means you can easilly be outed by someone's well-intentioned post to social media, happening to pass by a security camera, a police car camera, a police body camera, etc. Depending on where you are located traffic cameras may or may not record all the time, and may or may not be reviewed by authorities.
 
 ## Filming Police Conduct
 
@@ -561,19 +581,9 @@ While a few areas have made this legally difficult (and you should check) the [A
 
 It is advised that you use an auto-uploading app of some type, as police often confiscate phones with incriminating evidence on them.
 
-## Cellphones
-Can give up your position, as well as record other information about you, even while appearing to be turned off.
+# Other Legal Issues (though not legal advice, we are not lawyers)
 
-See cellphone sections under "Known Compromised Systems"
-
-# 7: Legal
-
-## 7.0 Description
-The primary author is not a lawyer, and none of the colaborators are known to be one either. This document is not legal advice. 
-
-## 7.1 No Fingerprint Readers to Unlock Things
-
-## 7.2 U.S. Customs and border patrol
+## U.S. Customs and border patrol
 When passing through U.S. customs it's probably smart to assume all your devices may be siezed and searched.
 
 Customs claims that since they can search your luggage, they can also search your devices. They extend this to include data stored in the cloud which your device has access to. 
@@ -582,23 +592,31 @@ Though it's not commonly done, they can and do take devices and image them, or t
 
 For this reason burner phones and the like may be your best bet when crossing the U.S. border.
 
-## 7.3 Passwords not necessarilly protected by U.S. 5'th ammendment
+##  Passwords not necessarilly protected by U.S. 5'th ammendment
 It's currently unclear whether giving up a password is protected by 5'th ammendment rights. There is at least one case where someone has been put in jail for over 2 years (as of now) for not giving up a password to data encrypted on his computer's harddrive (believed to be child pornography in this case).
 
-# 8: Contributing to Internet Freedom (Mostly Nontechnical)
+## No Fingerprint Readers to Unlock Things
 
-## 8.0: Explanation
+# How can I help?
+## Running a TOR Node
 
-Since many of these services are decentralized or crowdsourced, you can contribute by running a piece of the network.
+Running a TOR middle node is helpful, and fairly low risk. If you have bandwidth to spare it's not all that hard to set up, and it's easy to set limits on how much bandwidth it is allowed to use. 
 
-## 8.1: Running a Tor Exit Node
+If you are braver, and willing to get involved in legal battles (depending on your country, some may have fewer issues) you can do a HUGE service to internet freedom by running a TOR Exit node. A major problem with TOR is many exit nodes are run by the government, the more that are not, the better for internet freedom. An Exit node is the place where the activity of people using TOR finally gets the last layer of encryption removed, and it becomes available to the government and others to watch.
 
-This is a huge service to the public, but **does sometimes expose you to harassment from the US federal government.** One of the greatest concerns about the security of Tor comes from the number of exit nodes which are controlled by the US government, so helping run more non-government nodes is a very big deal. Here is [Noisebridge's guide on responding to federal inqueries about their tor exit node](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI). 
+Many users of TOR are up to neferous deeds, and as a result much traffic flowing out of TOR (your Exit node if you run one) is neferous in nature, and you will get blamed for it. This is the nature of freedom, to protect people from censorship, we also protect bad actors activities as well.
+
+If you are willing to take this on here is [Noisebridge's guide on responding to federal inqueries about their tor exit node](https://www.noisebridge.net/wiki/Noisebridge_Tor/FBI). 
 
 Please seriously consider [running a Tor exit node](https://blog.torproject.org/blog/tips-running-exit-node), particularly if you live in a country with stronger civil liberties. 
 
-## 8.2: Downloading and Storing Activist Information for Offline Distribution
+## Downloading and Storing Activist Information for Offline Distribution
 
-## 8.3: Running a Bittorrent Mirror for Activist Information
+If the information is stored places besides the internet, internet censorship can't affect it.
 
-## 8.4: Configuring Your Phone to Detect IMSI Catchers
+Similarly many people don't have easy access to information on the web, or don't know it's out there. Help spread the good word. The ACLU is a good place to start. For example, here is their [protest guide](https://www.aclu.org/know-your-rights/what-do-if-your-rights-are-violated-demonstration-or-protest)
+
+## Running a Bittorrent Mirror for Activist Information
+
+
+## Configuring Your Phone to Detect IMSI Catchers
