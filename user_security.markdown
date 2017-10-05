@@ -18,11 +18,11 @@ If your head is realing after reading over "Basics" and you're just an average j
  * Technical people: We welcome contributions, additions and corrections.
  * Non-technical people: Information about what areas are unclear or in need of improvement is hugely valuable.
 
-As a gist document, feel free to comment, fork and ask me to pull, etc.
+As a github document, feel free to comment, fork and ask me to pull, etc.
 
 ## Ownership and Distribution
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate). All Amazon links include the EFF referral tag, so they get money.
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), Though we'd prefer that you just submit patches to [this git repo](https://github.com/bluehat/privacy_and_freedom). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate). All Amazon links include the EFF referral tag, so they get money.
 
 This information is kept in git format because it is easy to transmit git repos peer-to-peer. You are encouraged to download a copy. Suggestions on how to keep the guide trustworthy and from having merge issues in a peer-to-peer environment are appreciated. 
 
@@ -845,7 +845,7 @@ Similarly many people don't have easy access to information on the web, or don't
 
 ## Help improve this document
 
-Comment on the gist, or email mbrewer@smalladventures.net.
+Comment on git, or email mbrewer@smalladventures.net.
 
 At this point virtually all feedback is welcome. Improvements, corrections, confusions, etc.
 
