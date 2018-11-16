@@ -16,7 +16,7 @@ Doug notes and made a list. I asked for a copy because I think he would take goo
 
 ## Also
 
-Upthon found [this cool and credible DIY option.](https://www.king5.com/article/news/local/this-diy-air-filter-for-wildfire-smoke-is-less-than-20/281-584346009)
+Adapter found [this cool and credible DIY option.](https://www.king5.com/article/news/local/this-diy-air-filter-for-wildfire-smoke-is-less-than-20/281-584346009)
 You Need
 * A box fan
 * A MERV 13 or FPR 10 filter.
