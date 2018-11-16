@@ -1,6 +1,6 @@
 # Air Notes
 
-Doug notes and made a list. I asked for a copy because I think he would take good notes and write good lists.
+Doug took notes and made a list. I asked for a copy because I think he would take good notes and write good lists.
 
 Referral links benefit the [EFF](https://www.eff.org/).
 
