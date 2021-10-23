@@ -3,7 +3,7 @@ In light of the gamergate fiasco, we realized that most of the targeted individu
 
 We do not believe that leaving your information online means you deserve harassment, we simply wish to arm people who want to speak up with all the defensive tools available.
 
-This guide is not an anti-government-surveillance document, as it only helps you make your information private and does not remove it. Fighting back against surveilance is a very different problem, and there is a [separate guide for that.](https://gist.github.com/bluehat/76a07a5d25f038a89f3b99c54a9a94a9)
+This guide is not an anti-government-surveillance document, as it only helps you make your information private and does not remove it. Fighting back against surveilance is a very different problem, and there is a [separate guide for that.](https://github.com/bluehat/privacy_and_freedom/blob/master/user_security.markdown)
 
 <h2>Hiding Your Whois Data</h2>
 This one should be easy, but it is the number one privacy failure we found when checking information of individuals who have previously been harassed.
@@ -45,8 +45,9 @@ EXIF data is a variety of information the device which captures your photo store
 If you recycle the same profile images over and over, you may be surprised what shows up if you [search by your profile image](http://www.google.com/insidesearch/features/images/searchbyimage.html).
 
 <h2>Miscellaneous</h2>
+
 * Don't hotlink images directly from Facebook unless you're OK with everybody knowing your Facebook profile.
-* If you discuss your partner(s) or housemates publicly, remember to make sure they follow this guide too.
+* If you discuss your partner(s) or housemates publicly, remember to make sure they follow the relevant portions of this guide too.
 
 <h1>Make your accounts harder to steal!</h1>
 <h2>2 Factor Authentication</h2>
@@ -94,6 +95,7 @@ Many harassers don't make the calls themselves but instead sign you up as intere
 While rare for those facing online abuse, this absolutely is possible if enough information about you becomes public. [/r/personalfinance has an excellent guide on their wiki](https://np.reddit.com/r/personalfinance/wiki/identity_theft). Thankfully, many of the steps are things you were probably doing already from this guide.
 
 <h1>The Bad News</h1>
+
 * If you own property, your address is a matter of public record. Sometimes you have to go to the office or call them to get it, but it can be legally obtained
 * If you are registered to vote, your contact information can be accessed by any Super-PAC in most states. Becoming one costs about $300 and the records cost $15 to obtain
 * Utility bills in your name, while they are not suppose to be something you can trace, often can be traced
@@ -101,15 +103,17 @@ While rare for those facing online abuse, this absolutely is possible if enough 
 * You currently need to begin Apple's 2FA process super early because they have a waiting period.
 
 <h2>What you can do</h2>
+
 * Use a fake last name
 
 <h1>Ways to help even if you are not experincing online harassment</h1>
+
 * Petition your government to make citizen privacy a priority
 * Petition sites you love to enable 2FA
 * Petition Apple to remove their waiting period. Katy wrote [a letter](https://medium.com/p/apple-please-update-your-2fa-and-support-policies-to-protect-those-experiencing-online-harassment-f95c4265a966) for you to send if you like.
 
 <h1>About</h1>
 
-This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's former coworkers at [Crooked Tree Studios](http://throwtrucks.com/), [Cliff Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
+This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's former coworkers at [Crooked Tree Studios](http://throwtrucks.com/), [Kiri Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/354432b82650d0a722ed). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
