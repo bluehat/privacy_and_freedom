@@ -22,18 +22,18 @@ If your personal information is available, we advise you to take one of the foll
 Whois data isn't generally publicly cached, so once you fix this you should be good to go! It sometimes technically can be stored by certain services behind a paywall.
 
 <h3>Advanced Whois Chaos</h3>
-If your information is on your whois but out of date, put some of it through [reverse whois tools](http://www.expertusability.com/reverse-whois-search/). A matching phone number or email address can be used to find other domains registered with that information, and those records might be current.
+If your information is on your whois but out of date, put some of it through reverse whois tools. A matching phone number or email address can be used to find other domains registered with that information, and those records might be current.
 
 <h2>Removing location data</h2>
 While most activists are very good about this, no guide would be complete without it!
 
 * [Disabling web location and removing your old location data on Twitter](https://support.twitter.com/articles/122236#)
 * [Disabling mobile location on mobile devices](https://support.twitter.com/articles/118492-using-the-location-feature-on-mobile-devices#)
-* [Disable location services on iOS](http://support.apple.com/kb/ht5594)
+* [Disable location services on iOS](https://support.apple.com/en-us/102515)
 * Unfortunately, due to the way android phones are made, the camera app is normally different for each manufacturer, and so you will have to look up directions specific to your phone's make.
 
 <h2>Removing EXIF data</h2>
-EXIF data is a variety of information the device which captures your photo stores and uploads with your photo. If this device contains a GPS chip (like almost all cellphones do) the location where the photo was taken can be determined. [The EFF has a longer explanation](https://www.eff.org/deeplinks/2012/04/picture-worth-thousand-words-including-your-location) if you're curious.
+EXIF data is a variety of information the device which captures your photo stores and uploads with your photo. If this device contains a GPS chip (like almost all cellphones do) the location where the photo was taken can be determined. The [EFF has a longer explanation](https://www.eff.org/deeplinks/2012/04/picture-worth-thousand-words-including-your-location) if you're curious.
 
 * Twitter, Facebook and Tumblr remove sensitive photo EXIF data by default, but not all services do. 
 * If you'd like to see what EXIF information a  site shows, take the URL of an image uploaded there and put it in [this website](http://exifdata.com/).
@@ -42,7 +42,7 @@ EXIF data is a variety of information the device which captures your photo store
 * Imgur automatically strips all sensitive information, so when in doubt, they are safe and awesome!
 
 <h2>Searching by Images</h2>
-If you recycle the same profile images over and over, you may be surprised what shows up if you [search by your profile image](http://www.google.com/insidesearch/features/images/searchbyimage.html).
+If you recycle the same profile images over and over, you may be surprised what shows up if you [search by your profile image](https://tineye.com/).
 
 <h2>Miscellaneous</h2>
 
@@ -55,15 +55,13 @@ We're sure you've been lectured on password security, and while your habits are 
 
 You're encouraged to enable 2-factor authentication on everything, but **prioritize accounts where password resets are sent**.
 
-Here is an [amazing website with directions on how to do 2-factor auth on everything ever](https://twofactorauth.org/).
-
 <h2>Update where password resets go</h2>
-Check through your old accounts. Do you still own the old @hotmail.com where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location. You can read as many postmortem security reports you need to to get the picture: **this is the most common way somebody gets control of your online persona.** First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town. **Even if you don't put a 2-factor setup anywhere else, put it on the primary email where all your password resets go.** If your password resets go all over the place, pick one account, send all the password resets there, and turn on 2-factor there.
+Check through your old accounts. Do you still own the old @hotmail.com where you registered your twitter handle 7 years ago? If you don't, somebody can register that name and take your password reset! Make sure your account recovery options go to a safe location. You can read as many postmortem security reports you need to to get the picture: **this is the most common way somebody gets control of your online persona**. First they take the account where your main account (probably your gmail) goes to, they reset that password, then they login to your main account (probably your gmail) and the go to town. **Even if you don't put a 2-factor setup anywhere else, put it on the primary email where all your password resets go.** If your password resets go all over the place, pick one account, send all the password resets there, and turn on 2-factor there.
 
 <h2>Proper unique passwords</h2>
 Remember how you thought your terrible habits would never come back to bite you? If you're reading this, you are obviously reconsidering that stance.
 
-Convincing you to be an adult overnight is probably a lost cause, so install a password manager. [KeePass](http://keepass.info/) is the choice of open-source hippies (like me), while [LastPass](https://lastpass.com/) and [1Password](https://agilebits.com/onepassword) are commercial options.
+Convincing you to be an adult overnight is probably a lost cause, so install a password manager. [KeePass](http://keepass.info/) is the choice of open-source hippies, while [Bitwarden](https://bitwarden.com/)) and [1Password](https://agilebits.com/onepassword) are commercial options.
 
 Whenever possible, set up and use ssh keys instead of passwords.
 
@@ -110,10 +108,9 @@ While rare for those facing online abuse, this absolutely is possible if enough 
 
 * Petition your government to make citizen privacy a priority
 * Petition sites you love to enable 2FA
-* Petition Apple to remove their waiting period. Katy wrote [a letter](https://medium.com/p/apple-please-update-your-2fa-and-support-policies-to-protect-those-experiencing-online-harassment-f95c4265a966) for you to send if you like.
 
 <h1>About</h1>
 
-This privacy guide is made by [Katy Levinson](https://twitter.com/katylevinson) and a privacy-concerned friend. It was debugged with love by Katy's former coworkers at [Crooked Tree Studios](http://throwtrucks.com/), [Kiri Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
+This privacy guide is made by bluehat and a privacy-concerned friend. It was debugged by many people including [Kiri Jolly](https://twitter.com/expiredpopsicle) and [Chris Meyer](twitter.com/cygnil).
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit patches to [this gist](https://gist.github.com/bluehat/354432b82650d0a722ed). If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/), though we'd prefer that you just submit pull requests to github. If you want to give us money for this public service, [give it to the EFF instead](https://supporters.eff.org/donate).
