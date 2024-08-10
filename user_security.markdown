@@ -284,13 +284,13 @@ access to ALL your accounts would be bad!
 
 We have a couple of specific recommendations
 
-#### LastPass
+#### Bitwarden
 
-This is the simplest, solution. It's free for use on your computer, but involves a small yearly subscription fee for using it on your phone. Everything is stored online, and automatically synced between devices. It also has nice browser plugins making using those passwords easy while you are actually browsing.
+This is the simplest, solution.
 
 For most users this is a great solution, but if you've been reading carefully you should be shaking your head about now. We were just talking about the dangers of using web services, can't the government get all your passwords? Isn't it logged every time your device checks in with the service to see if there's more stuff to sync? Wouldn't someone watching be able to use that request to identify your computer and discover you?
 
-LastPass does do things right, the passwords are all encrypted with master passwords, making them very hard to steel if someone gets in to their network. But, it's a web service, so those worries are not unwarranted. For this reason you may want to use LastPass
+Bitwarden does do things right, the passwords are all encrypted with master passwords, making them very hard to steel if someone gets in to their network. But, it's a web service, so those worries are not unwarranted. For this reason you may want to use LastPass
 
 Risks:
   1. It's a web service, with all of the risks this comes with.
@@ -324,7 +324,7 @@ We're going to go through setting this up on a laptop and a phone. We would poin
  1. Get the "keyfile" on to the phone, but don't use Dropbox to do it. This is the hardest part, and unfortunately can be a major sticking point. Every combination of phone/laptop though is different. 
  1. Tell the phone version of KeePass to use Dropbox for the database, and point it at the keyfile
 
-It's FAR easier to put the keyfile on Dropbox, but also FAR less secure (if you are going to do use this, LastPass may be a better option if you don't mind the money). A hacker who gets only the database, even a government entity, is highly unlikely to ever be able to see your passwords. But, if they HAVE the keyfile, they can use the methods explained under "Passwords" to crack in, and then they'll have ALL your passwords!
+It's FAR easier to put the keyfile on Dropbox, but also FAR less secure (if you are going to do use this, Bitwarden may be a better option). A hacker who gets only the database, even a government entity, is highly unlikely to ever be able to see your passwords. But, if they HAVE the keyfile, they can use the methods explained under "Passwords" to crack in, and then they'll have ALL your passwords!
 
 With this setup you'll be able to access all your passwords offline. If the Dropbox app isn't started when your laptop starts there will be no synchronization, so nothing to give you away. This gives you a fair amount of direct control. 
 
